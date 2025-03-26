@@ -154,4 +154,157 @@ $(window).load(function(){
     portfolioIsotope.isotope({ filter: $(this).data('filter') });
   });
 
-})
+});
+
+// Mobile Navigation Toggle
+const hamburger = document.querySelector('.hamburger');
+const navLinks = document.querySelector('.nav-links');
+
+hamburger.addEventListener('click', () => {
+    navLinks.style.display = navLinks.style.display === 'flex' ? 'none' : 'flex';
+    hamburger.classList.toggle('active');
+});
+
+// Smooth Scrolling for Navigation Links
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+            target.scrollIntoView({
+                behavior: 'smooth',
+                block: 'start'
+            });
+            // Close mobile menu if open
+            if (window.innerWidth <= 768) {
+                navLinks.style.display = 'none';
+                hamburger.classList.remove('active');
+            }
+        }
+    });
+});
+
+// Navbar Background Change on Scroll
+const navbar = document.querySelector('.navbar');
+let lastScroll = 0;
+
+window.addEventListener('scroll', () => {
+    const currentScroll = window.pageYOffset;
+    
+    if (currentScroll <= 0) {
+        navbar.classList.remove('scroll-up');
+        return;
+    }
+    
+    if (currentScroll > lastScroll && !navbar.classList.contains('scroll-down')) {
+        // Scroll Down
+        navbar.classList.remove('scroll-up');
+        navbar.classList.add('scroll-down');
+    } else if (currentScroll < lastScroll && navbar.classList.contains('scroll-down')) {
+        // Scroll Up
+        navbar.classList.remove('scroll-down');
+        navbar.classList.add('scroll-up');
+    }
+    lastScroll = currentScroll;
+});
+
+// Fade In Animation for Sections
+const observerOptions = {
+    root: null,
+    rootMargin: '0px',
+    threshold: 0.1
+};
+
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('fade-in');
+            observer.unobserve(entry.target);
+        }
+    });
+}, observerOptions);
+
+document.querySelectorAll('section').forEach(section => {
+    observer.observe(section);
+});
+
+// Form Submission
+const contactForm = document.querySelector('.contact-form');
+if (contactForm) {
+    contactForm.addEventListener('submit', async (e) => {
+        e.preventDefault();
+        
+        const formData = new FormData(contactForm);
+        const data = Object.fromEntries(formData);
+        
+        try {
+            // Here you would typically send the data to your backend
+            // For now, we'll just show a success message
+            alert('Thank you for your message! I will get back to you soon.');
+            contactForm.reset();
+        } catch (error) {
+            console.error('Error:', error);
+            alert('There was an error sending your message. Please try again later.');
+        }
+    });
+}
+
+// Dynamic Project Cards
+const projects = [
+    {
+        title: 'Genomic Analysis Tool',
+        description: 'A Python-based tool for analyzing genomic sequences and identifying patterns.',
+        technologies: ['Python', 'Bioinformatics', 'Machine Learning'],
+        link: '#'
+    },
+    {
+        title: 'Data Visualization Platform',
+        description: 'Interactive platform for visualizing biological data and research findings.',
+        technologies: ['JavaScript', 'D3.js', 'React'],
+        link: '#'
+    },
+    // Add more projects as needed
+];
+
+const projectsGrid = document.querySelector('.projects-grid');
+if (projectsGrid) {
+    projects.forEach(project => {
+        const projectCard = document.createElement('div');
+        projectCard.className = 'project-card fade-in';
+        projectCard.innerHTML = `
+            <h3>${project.title}</h3>
+            <p>${project.description}</p>
+            <div class="project-technologies">
+                ${project.technologies.map(tech => `<span>${tech}</span>`).join('')}
+            </div>
+            <a href="${project.link}" class="btn primary">View Project</a>
+        `;
+        projectsGrid.appendChild(projectCard);
+    });
+}
+
+// Dynamic Publication List
+const publications = [
+    {
+        title: 'Title of Publication 1',
+        authors: 'Authors et al.',
+        journal: 'Journal Name',
+        year: '2023',
+        link: '#'
+    },
+    // Add more publications as needed
+];
+
+const publicationsList = document.querySelector('.publications-list');
+if (publicationsList) {
+    publications.forEach(pub => {
+        const pubEntry = document.createElement('div');
+        pubEntry.className = 'publication-entry fade-in';
+        pubEntry.innerHTML = `
+            <h3><a href="${pub.link}">${pub.title}</a></h3>
+            <p class="authors">${pub.authors}</p>
+            <p class="journal">${pub.journal} (${pub.year})</p>
+        `;
+        publicationsList.appendChild(pubEntry);
+    });
+}
