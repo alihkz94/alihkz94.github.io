@@ -10,15 +10,15 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 })(window,document,'script','dataLayer','GTM-KPW6QJ75');</script>
 <!-- End Google Tag Manager -->
   <!-- meta -->
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Folio - Personal Portfolio Template</title>
+  <title>Ali Hakimzadeh - Bioinformatics Portfolio</title>
   <meta content="" name="keywords">
   <meta content="" name="description">
 
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,500,500i,600,600i,700,700i|Playfair+Display:400,400i,700,700i,900,900i" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
   <!-- Bootstrap CSS File -->
   <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -44,6 +44,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     Author: BootstrapMade.com
     Author URL: https://bootstrapmade.com
   ======================================================= -->
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 
 <body>
@@ -52,24 +54,21 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
   <!-- start section navbar -->
-  <nav id="main-nav">
-    <div class="row">
-      <div class="container">
-
-        <div class="logo">
-          <a href="index.html"><img src="images/logo.png" alt="logo"></a>
-        </div>
-
-        <div class="responsive"><i data-icon="m" class="ion-navicon-round"></i></div>
-
-        <ul class="nav-menu list-unstyled">
-          <li><a href="#header" class="smoothScroll">Home</a></li>
-          <li><a href="#about" class="smoothScroll">About</a></li>
-          <li><a href="#portfolio" class="smoothScroll">Portfolio</a></li>
-          <li><a href="#journal" class="smoothScroll">Blog</a></li>
-          <li><a href="#contact" class="smoothScroll">Contact</a></li>
-        </ul>
-
+  <nav class="navbar">
+    <div class="container">
+      <div class="logo">AH</div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#research">Research</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#publications">Publications</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
       </div>
     </div>
   </nav>
@@ -77,359 +76,135 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 
   <!-- start section header -->
-  <div id="header" class="home">
-
+  <section id="home" class="hero">
     <div class="container">
-      <div class="header-content">
-        <h1>I'm <span class="typed"></span></h1>
-        <p>designer, developeur, photographer</p>
-
-        <ul class="list-unstyled list-social">
-          <li><a href="#"><i class="ion-social-facebook"></i></a></li>
-          <li><a href="#"><i class="ion-social-twitter"></i></a></li>
-          <li><a href="#"><i class="ion-social-instagram"></i></a></li>
-          <li><a href="#"><i class="ion-social-googleplus"></i></a></li>
-          <li><a href="#"><i class="ion-social-tumblr"></i></a></li>
-          <li><a href="#"><i class="ion-social-dribbble"></i></a></li>
-        </ul>
+      <div class="hero-content">
+        <h1>Ali Hakimzadeh</h1>
+        <h2>Bioinformatics Researcher</h2>
+        <p>Advancing biological research through computational methods</p>
+        <div class="cta-buttons">
+          <a href="#about" class="btn primary">Learn More</a>
+          <a href="#contact" class="btn secondary">Get in Touch</a>
+        </div>
       </div>
     </div>
-  </div>
+  </section>
   <!-- End section header -->
 
 
   <!-- start section about us -->
-  <div id="about" class="paddsection">
+  <section id="about" class="about">
     <div class="container">
-      <div class="row justify-content-between">
-
-        <div class="col-lg-4 ">
-          <div class="div-img-bg">
-            <div class="about-img">
-              <img src="images/me.jpg" class="img-responsive" alt="me">
+      <h2 class="section-title">About Me</h2>
+      <div class="about-content">
+        <div class="about-text">
+          <p>I am a bioinformatics researcher passionate about developing computational solutions for biological research challenges. My work focuses on analyzing complex biological data and creating tools to advance our understanding of biological systems.</p>
+          <div class="skills">
+            <h3>Expertise</h3>
+            <div class="skill-tags">
+              <span>Bioinformatics</span>
+              <span>Computational Biology</span>
+              <span>Data Analysis</span>
+              <span>Machine Learning</span>
+              <span>Python</span>
+              <span>R</span>
             </div>
           </div>
         </div>
-
-        <div class="col-lg-7">
-          <div class="about-descr">
-
-            <p class="p-heading">im a ux /ui designer austin based who loves clean, simple & unique design. i also enjoy crafting brand identities, icons, & ilustration work. </p>
-            <p class="separator">To an English person, it will seem like simplified English, as a skeptical Cambridge friend of mine told me what Occidental is. The European languages are members of the same family.English person.</p>
-
-          </div>
-
-        </div>
       </div>
     </div>
-  </div>
+  </section>
   <!-- end section about us -->
 
 
   <!-- start section services -->
-  <div id="services">
+  <section id="research" class="research">
     <div class="container">
-
-        <div class="services-carousel owl-theme">
-
-          <div class="services-block">
-
-            <i class="ion-ios-browsers-outline"></i>
-            <span>UI/UX DESIGN</span>
-            <p class="separator">To an English person, it will seem like simplified English,told me what </p>
-
-          </div>
-
-          <div class="services-block">
-
-            <i class="ion-ios-lightbulb-outline"></i>
-            <span>BRAND IDENTITY</span>
-            <p class="separator">To an English person, it will seem like simplified English,told me what </p>
-
-          </div>
-
-          <div class="services-block">
-
-            <i class="ion-ios-color-wand-outline"></i>
-            <span>WEB DESIGN</span>
-            <p class="separator">To an English person, it will seem like simplified English,told me what </p>
-
-          </div>
-
-          <div class="services-block">
-
-            <i class="ion-social-android-outline"></i>
-            <span>MOBILE APPS</span>
-            <p class="separator">To an English person, it will seem like simplified English,told me what </p>
-
-          </div>
-
-          <div class="services-block">
-
-            <i class="ion-ios-analytics-outline"></i>
-            <span>Analytics</span>
-            <p class="separator">To an English person, it will seem like simplified English,told me what </p>
-
-          </div>
-
-          <div class="services-block">
-
-            <i class="ion-ios-camera-outline"></i>
-            <span>PHOTOGRAPHY</span>
-            <p class="separator">To an English person, it will seem like simplified English,told me what </p>
-
-          </div>
-
+      <h2 class="section-title">Research Focus</h2>
+      <div class="research-grid">
+        <div class="research-card">
+          <i class="fas fa-dna"></i>
+          <h3>Genomic Analysis</h3>
+          <p>Developing methods for analyzing genomic data and understanding genetic variations.</p>
         </div>
-
+        <div class="research-card">
+          <i class="fas fa-microscope"></i>
+          <h3>Biological Data Mining</h3>
+          <p>Extracting meaningful insights from complex biological datasets.</p>
+        </div>
+        <div class="research-card">
+          <i class="fas fa-code"></i>
+          <h3>Tool Development</h3>
+          <p>Creating computational tools for biological research.</p>
+        </div>
+      </div>
     </div>
-
-  </div>
+  </section>
   <!-- end section services -->
 
 
   <!-- start section portfolio -->
-  <div id="portfolio" class="text-center paddsection">
-
+  <section id="projects" class="projects">
     <div class="container">
-      <div class="section-title text-center">
-        <h2>My Portfolio</h2>
+      <h2 class="section-title">Featured Projects</h2>
+      <div class="projects-grid">
+        <!-- Project cards will be added here -->
       </div>
     </div>
-
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-
-          <div class="portfolio-list">
-
-            <ul class="nav list-unstyled" id="portfolio-flters">
-              <li class="filter filter-active" data-filter=".all">all</li>
-              <li class="filter" data-filter=".branding">branding</li>
-              <li class="filter" data-filter=".mockups">mockups</li>
-              <li class="filter" data-filter=".uikits">ui kits</li>
-              <li class="filter" data-filter=".webdesign">web design</li>
-              <li class="filter" data-filter=".photography">photography</li>
-            </ul>
-
-          </div>
-
-          <div class="portfolio-container">
-
-            <div class="col-lg-4 col-md-6 portfolio-thumbnail all branding uikits webdesign">
-              <a class="popup-img" href="images/portfolio/1.jpg">
-                <img src="images/portfolio/1.jpg" alt="img">
-              </a>
-            </div>
-
-            <div class="col-lg-4 col-md-6 portfolio-thumbnail all mockups uikits photography">
-              <a class="popup-img" href="images/portfolio/2.jpg">
-                <img src="images/portfolio/2.jpg"  alt="img">
-              </a>
-            </div>
-
-            <div class="col-lg-4 col-md-6 portfolio-thumbnail all branding webdesig photographyn">
-              <a class="popup-img" href="images/portfolio/3.jpg">
-                <img src="images/portfolio/3.jpg" alt="img">
-              </a>
-            </div>
-
-            <div class="col-lg-4 col-md-6 portfolio-thumbnail all mockups webdesign photography">
-              <a class="popup-img" href="images/portfolio/4.jpg">
-                <img src="images/portfolio/4.jpg" alt="img">
-              </a>
-            </div>
-
-            <div class="col-lg-4 col-md-6 portfolio-thumbnail all branding uikits photography">
-              <a class="popup-img" href="images/portfolio/5.jpg">
-                <img src="images/portfolio/5.jpg" alt="img">
-              </a>
-            </div>
-
-            <div class="col-lg-4 col-md-6 portfolio-thumbnail all mockups uikits webdesign">
-              <a class="popup-img" href="images/portfolio/6.jpg">
-                <img src="images/portfolio/6.jpg" alt="img">
-              </a>
-            </div>
-
-          </div>
-        </div>
-      </div>
-    </div>
-
-  </div>
+  </section>
   <!-- End section portfolio -->
 
 
   <!-- start section journal -->
-  <div id="journal" class="text-left paddsection">
-
+  <section id="publications" class="publications">
     <div class="container">
-      <div class="section-title text-center">
-        <h2>journal</h2>
+      <h2 class="section-title">Publications</h2>
+      <div class="publications-list">
+        <!-- Publication entries will be added here -->
       </div>
     </div>
-
-    <div class="container">
-      <div class="journal-block">
-        <div class="row">
-
-          <div class="col-lg-4 col-md-6">
-            <div class="journal-info">
-
-              <a href="blog-single.html"><img src="images/blog-post-1.jpg" class="img-responsive" alt="img"></a>
-
-              <div class="journal-txt">
-
-                <h4><a href="blog-single.html">SO LETS MAKE THE MOST IS BEAUTIFUL</a></h4>
-                <p class="separator">To an English person, it will seem like simplified English
-                </p>
-
-              </div>
-
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6">
-            <div class="journal-info">
-
-              <a href="blog-single.html"><img src="images/blog-post-2.jpg" class="img-responsive" alt="img"></a>
-
-              <div class="journal-txt">
-
-                <h4><a href="#blog-single.html">WE'RE GONA MAKE DREAMS COMES</a></h4>
-                <p class="separator">To an English person, it will seem like simplified English
-                </p>
-
-              </div>
-
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6">
-            <div class="journal-info">
-
-              <a href="blog-single.html"><img src="images/blog-post-3.jpg" class="img-responsive" alt="img"></a>
-
-              <div class="journal-txt">
-
-                <h4><a href="blog-single.html">NEW LIFE CIVILIZATIONS TO BOLDLY</a></h4>
-                <p class="separator">To an English person, it will seem like simplified English
-                </p>
-
-              </div>
-
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </div>
-
-  </div>
+  </section>
   <!-- End section journal -->
 
 
   <!-- start sectoion contact -->
-  <div id="contact" class="paddsection">
+  <section id="contact" class="contact">
     <div class="container">
-      <div class="contact-block1">
-        <div class="row">
-
-          <div class="col-lg-6">
-            <div class="contact-contact">
-
-              <h2 class="mb-30">GET IN TOUCH</h2>
-
-              <ul class="contact-details">
-                <li><span>23 Main, Street</span></li>
-                <li><span>New York, United States</span></li>
-                <li><span>+88 01912704287</span></li>
-                <li><span>example@example.com</span></li>
-              </ul>
-
-            </div>
+      <h2 class="section-title">Get in Touch</h2>
+      <div class="contact-content">
+        <div class="contact-info">
+          <div class="contact-item">
+            <i class="fas fa-envelope"></i>
+            <p>email@example.com</p>
           </div>
-
-          <div class="col-lg-6">
-            <form action="" method="post" role="form" class="contactForm">
-              <div class="row">
-
-                <div id="sendmessage">Your message has been sent. Thank you!</div>
-                <div id="errormessage"></div>
-
-                <div class="col-lg-6">
-                  <div class="form-group contact-block1">
-                    <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
-                    <div class="validation"></div>
-                  </div>
-                </div>
-
-                <div class="col-lg-6">
-                  <div class="form-group">
-                    <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
-                    <div class="validation"></div>
-                  </div>
-                </div>
-
-                <div class="col-lg-12">
-                  <div class="form-group">
-                    <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
-                    <div class="validation"></div>
-                  </div>
-                </div>
-
-                <div class="col-lg-12">
-                  <div class="form-group">
-                    <textarea class="form-control" name="message" rows="12" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
-                    <div class="validation"></div>
-                  </div>
-                </div>
-
-                <div class="col-lg-12">
-                  <input type="submit" class="btn btn-defeault btn-send" value="Send message">
-                </div>
-
-              </div>
-            </form>
+          <div class="contact-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <p>Location</p>
+          </div>
+          <div class="social-links">
+            <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-google-scholar"></i></a>
           </div>
         </div>
+        <form class="contact-form">
+          <input type="text" placeholder="Name" required>
+          <input type="email" placeholder="Email" required>
+          <textarea placeholder="Message" required></textarea>
+          <button type="submit" class="btn primary">Send Message</button>
+        </form>
       </div>
     </div>
-  </div>
+  </section>
   <!-- start sectoion contact -->
 
 
   <!-- start section footer -->
-  <div id="footer" class="text-center">
+  <footer class="footer">
     <div class="container">
-      <div class="socials-media text-center">
-
-        <ul class="list-unstyled">
-          <li><a href="#"><i class="ion-social-facebook"></i></a></li>
-          <li><a href="#"><i class="ion-social-twitter"></i></a></li>
-          <li><a href="#"><i class="ion-social-instagram"></i></a></li>
-          <li><a href="#"><i class="ion-social-googleplus"></i></a></li>
-          <li><a href="#"><i class="ion-social-tumblr"></i></a></li>
-          <li><a href="#"><i class="ion-social-dribbble"></i></a></li>
-        </ul>
-
-      </div>
-
-      <p>&copy; Copyrights Folio. All rights reserved.</p>
-
-      <div class="credits">
-        <!--
-          All the links in the footer should remain intact.
-          You can delete the links only if you purchased the pro version.
-          Licensing information: https://bootstrapmade.com/license/
-          Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=Folio
-        -->
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
-      </div>
-
+      <p>&copy; 2024 Ali Hakimzadeh. All rights reserved.</p>
     </div>
-  </div>
+  </footer>
   <!-- End section footer -->
 
   <!-- JavaScript Libraries -->
