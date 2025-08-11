@@ -302,16 +302,4 @@ if (projectsGrid) {
 }
 
 
-const publicationsList = document.querySelector('.publications-list');
-if (publicationsList) {
-    publications.forEach(pub => {
-        const pubEntry = document.createElement('div');
-        pubEntry.className = 'publication-entry fade-in';
-        pubEntry.innerHTML = `
-            <h3><a href="${pub.link}">${pub.title}</a></h3>
-            <p class="authors">${pub.authors}</p>
-            <p class="journal">${pub.journal} (${pub.year})</p>
-        `;
-        publicationsList.appendChild(pubEntry);
-    });
-}
+// Removed dynamic publications injection (static markup now maintained in index.html)

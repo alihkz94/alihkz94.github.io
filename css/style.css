@@ -209,9 +209,9 @@ h1, h2, h3, h4, h5, h6 {
 
 .about-content {
     display: grid;
-    grid-template-columns: 1fr 2fr;
-    gap: 4rem;
-    align-items: center;
+    grid-template-columns: minmax(260px,320px) 1fr;
+    gap: 3rem;
+    align-items: start;
 }
 
 .about-image {
@@ -228,6 +228,49 @@ h1, h2, h3, h4, h5, h6 {
 
 .about-text {
     text-align: left;
+}
+
+.about-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.skill-categories {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px,1fr));
+    gap: 1rem;
+}
+
+.skill-category {
+    background: var(--white);
+    padding: 1rem 1.25rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+}
+
+.skill-category h4 {
+    margin-bottom: .65rem;
+    font-size: .95rem;
+    text-transform: uppercase;
+    letter-spacing: .5px;
+    color: var(--secondary-color);
+}
+
+.skill-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .4rem;
+}
+
+.skill-tags span {
+    background: var(--primary-color);
+    color: #fff;
+    padding: .3rem .6rem;
+    font-size: .7rem;
+    border-radius: 20px;
+    line-height: 1;
 }
 
 .about-text .lead {
@@ -1016,9 +1059,9 @@ h1, h2, h3, h4, h5, h6 {
     }
 
     .about-content {
-        grid-template-columns: 1fr;
-        gap: 2rem;
-        text-align: center;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    text-align: center;
     }
 
     .about-image img {
@@ -1027,7 +1070,7 @@ h1, h2, h3, h4, h5, h6 {
     }
 
     .skill-categories {
-        grid-template-columns: 1fr;
+    grid-template-columns: repeat(auto-fit,minmax(140px,1fr));
     }
 
     .research-grid {
