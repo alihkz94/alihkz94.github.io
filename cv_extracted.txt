@@ -1,0 +1,172 @@
+ALI HAKIMZADEH  
+  
+  
+  
+Tartu  Estonia  ♦ +37253886758  ♦ ali.hakimzadeh@ut.ee    
+ 
+     PROFILES     
+• GitHub:  https://github.com/alihkz94  
+• LinkedIn: https://www.linkedin.com/in/alihkz94  
+• ResearchGate:  https://www.researchgate.net/profile/Ali -Hakimzadeh  
+• Researcher unique identifier: https://orcid.org/0000 -0003 -1336 -7445  
+     EDUCATION     
+Ph.D. : Ecology And Botany                 12/2021 -Expected in10/2025   
+University of Tartu  - Tartu, Estonia   
+• Research topic : Bioinformatics analysis of long DNA markers  
+Projects:  
+• Microbiome and fungal eDNA  barcoding , metabarcoding, and metagenomics bioinformatics analysis  
+• Developing  and implementing new modules for  the PipeCraft2  pipeline  
+• Contribution to rRNA gene reference database development for eukaryotes ( EUKARYOME ) 
+• Evaluation and enhancement of  chimera detection algorithms on long -read amplicons  
+• Variant calling analysis related to fungal datasets  from different sequencing platforms  
+• Part of the sampling team in the TREC (Traversing European Coastlines)  project   
+Master of Science : Medical Biotechnology            11/2017 -04/2020   
+Università Degli Studi Di Siena  – Siena , Italy   
+• Research topic : Assessment of bioinformatic methods for analyzing differentially expressed genes in 
+vaccination studies  
+Projects : 
+• Transcriptomic data analysis  to investigate vaccine efficacy by using scripts in Bash, Python, and R and tools 
+like: DESeq2, edgeR, HISAT2, limma, Samtools, STAR, picard, BEDtools and developing machine learning 
+models by using Python (Pandas, Numpy, scikit -learn, TensorFlow), applying cross -validation, confusion 
+matrix, and ROC/precision -recall curve to evaluate model performance  
+• DEASS: Differential gene expression analysis sample by sample based and optimization compared to edgeR 
+and DESeq2  
+Bachelor of Science : Zoology             11/2012 -06/2016   
+Tabriz University  – Tabriz , Iran   
+     SKILLS     
+• Omics data analysis:  Transcriptomics, WGS, WES, 
+CRISPR screening, Metabarcoding, Metagenomics, 
+Barcoding    
+• Programming:  Python, R, Bash, Git, LaTeX   
+• Machine learning:  Dimensionality reduction,  
+Hypothesis testing, Clustering    
+• Workflow & Pipeline development:  Nextflow,  
+Snakemake, Docker, Singularity   
+• Cloud technologies:  HPC (SLURM), AWS   
+     WORK EXPERIENCE     
+Bioinformatician              11/2020 - 09/2021   
+Imam Khomeini Hospital  – Tehran , Iran  
+• Executed 10X Chromium scRNA -seq and prepared CROP -seq libraries from gastric cancer organoids for in  
+vivo CRISPR screens.  
+
+• Applied UMI sequencing to identify enriched sgRNAs and integrate multiome data (>100k cells/donor) with  
+spatial transcriptomic.  
+• Performed gene -set enrichment, somatic CNV, clonal evolution, and tissue -specific driver analyses using  
+Seurat, Scanpy, MAST, scCN, and MOFA.  
+• Developed machine learning models with scVI, TensorFlow, and PyTorch for spatial mapping, cell type  
+classification, and clone fitness prediction  
+• Conducted WGS and WES data analysis (JWES and Nvidia Parabricks) to identify somatic and germline  
+mutations, structural variants, and potential therapeutic targets  
+Labrotary Assistant ,            09/2013 - 09/2015   
+Tabriz University  – Tabriz , Iran  
+• Cared for and maintained colonies of rats and mice, ensuring their well -being and adherence to ethical 
+guidelines.  
+• Conducted behavioral assays, including the Morris water maze to evaluate spatial memory and the T -maze to 
+assess decision -making processes.  
+• Analyzed data using Rtrack for water maze experiments and MouBeAT for T -maze studies.  
+• Administered substances via oral, intraperitoneal (IP), and intramuscular (IM) injections.  
+• Harvested brain and liver tissues for subsequent biochemical analyses.  
+• Performed spectrophotometric assays to assess toxicity and stress markers in collected tissues.  
+     PUBLICATIONS     
+Complete publication list available at Google Scholar  
+ 
+• A pile of pipelines: An overview of the bioinformatics software for metabarcoding data analyses  
+Molecular Ecology Resources  
+Ali Hakimzadeh , Alejandro Abdala Asbun, Davide Albanese, Maria Bernard, Dominik Buchner, Benjamin 
+Callahan, J Gregory Caporaso, Emily Curd, Christophe Djemiel, Mikael Brandström Durling, Vasco Elbrecht, 
+Zachary Gold, Hyun S Gweon, Mehrdad Hajibabaei, Falk Hildebrand, Vladimir Mikryukov, Eric Normandeau, Ezgi 
+Özkurt, Jonathan M. Palmer, Géraldine Pascal, Teresita M Porter, Daniel Straub, Martti Vasar, Tomáš Větrovský, 
+Haris Zafeiropoulos, Sten Anslan (https://doi.org/10.1111/1755 -0998.13847)  
+ 
+• EUKARYOME: the rRNA gene reference database for identification of all eukaryotes  
+Oxford University Press  
+Leho Tedersoo, Mahdieh S Hosseyni Moghaddam, Vladimir Mikryukov, Ali Hakimzadeh , Mohammad Bahram, R 
+Henrik Nilsson, Iryna Yatsiuk, Stefan Geisen, Arne Schwelm, Kasia Piwosz, Marko Prous, Sirje Sildever, Dominika 
+Chmolowska, Sonja Rueckert, Pavel Skaloud, Peeter Laas, Marco Tines, Jae -Ho Jung, Ji Hye Choi, Saad Alkahtani, 
+Sten Anslan (https://doi.org/10.1093/database/baae043)  
+ 
+• Role of non -coding RNAs as new therapeutic targets in regulating the EMT and apoptosis in metastatic 
+gastric and colorectal cancers  
+Taylor & Francis  
+Nasim Ebrahimi, Ali Hakimzadeh , Farima Bozorgmand, Sepehr Speed, Mahdokht Sadat Manavi, Roya Khorram, 
+Kobra Farahani, Fatemeh Rezaei -Tazangi, Atena Mansouri, Michael R. Hamblin, Amir Reza Aref 
+(https://doi.org/10.1080/15384101.2023.2286804)  
+ 
+• The Impact of Oil Palm Plantations and Pastures on Benthic Prokaryotic and Fungal Communities in 
+Tropical Streams  
+Freshwater Biology  
+Oscar Alberto Rojas -Castillo,  Ali Hakimzadeh , Leho Tedersoo,  Dean Jacobsen,  Sebastian Kepfer -Rojas 
+(https://doi.org/10.1111/fwb.14376)  
+ 
+• Evaluation of chimera detection algorithms on long -read amplicons  
+in progress  
+
+Ali Hakimzadeh , Vladimir Mikryukov, Leho Tedersoo, Sten Anslan  
+ 
+• Invisible Passengers Diversity and Risks of Fungal and Bacterial Transport via International Airport 
+Passenger Footwear  
+In progress  
+Niloufar Hagh -Doust, Ali Hakimzadeh , John Yangyuoru Kupagme, Glen Dierickx, Ovidiu Copot, Leho Tedersoo  
+ 
+• DNA barcoding of fungal specimens: A tripartite approach using PacBio, Oxford Nanopore, and 
+Sanger  sequencing  
+In progress  
+John Yangyuoru Kupagme , Ali Hakimzadeh , Leho Tedersoo  
+     TEACHING ACTIVITY     
+• PipeCraft2 Workshop - Lecturer  March 2025  
+University of Tartu - Department of Parasitology  
+ 
+• Metabarcoding: from Lab to Bioinformatics - Lecturer  June 2022  
+Summer school - University of Tartu  
+ 
+• Bioinformatics - Teacher Assistant  2020 -2021  
+Biotechnology course (Master of science degree) - University of Tehran   
+ 
+• NGS and data analysis - Teacher Assistant  2020 -2021  
+Biology course ( Bachelor of science degree ) - University of Tehran  
+ 
+• "RNA -Seq analysis" workshop - Lecturer  May 2020  
+ 
+• "Introduction to NCBI" workshop - Lecturer  July 2020  
+     CONFERENCES     
+• “The neurotoxicity effect of cadmium in the presence or absence of vitamin C on spatial learning and memory 
+in male rats” at the 6th International Conference Of Cognitive Science 27 -29 April 2015, Tehran - Iran 
+• “Protective effect of vitamin C on anxiety during cadmium neurotoxicity in male rats” at the 13th Iranian 
+International Congress of Toxicology 12 -14 May 2015, Urmia - Iran 
+• " Effect of vitamin C on acute pain during cadmium toxicity in male rats" at the 22nd  Congress  of Physiology 
+and Pharmacology  7-11 September 2015, Kashan - Iran 
+• "An overview of bioinformatic pipelines for metabarcoding data analyses" at Nextflow Summit  2022, 
+Barcelona - Spain  
+• "Evaluation of chimera detection algorithms on long -read amplicons" at IMC12 11 -15 August 2024, Maastricht 
+– Netherlands  
+• " PipeCraft2 : Metabarcoding data analysis pipeline" at ECCB 16 - 20 September 2024, Turku – Finland  
+     AWARDS AND HONORS     
+• Marie Skłodowska -Curie European Scholarship winner - Siena, Italy  (2016)  
+• Best presentation award at the conference of the Department of Botany - Tartu, Estonia (2024)  
+• Ranked among the top 3 student scientific unions in the National HARAKAT FESTIVAL - Tehran, Iran (2014)  
+• Chan Zuckerberg Travel Grant winner (2022)  
+• Dora plus scholarship winner (2023)  
+             REFERENCES     
+• Leho Tedersoo  
+Professor of Mycology  
+
+University of Tartu, Institute of Ecology and Earth Sciences  
+Email: Leho.tedersoo@ut.ee  Phone: +372  7376171  
+ 
+• Sten Anslan  
+Academy Research fellow  
+University of Jyväskylä , Department of Biological and Environmental Science  
+Email: sten.s.anslan@jyu.fi  Phone: +358  504612239                                                                 
+ 
+• Simone Furini  
+Associate Professor of Bioinformatics  
+University of Bologna, Department of Electrical, Electronic and Information Engineering  
+Email: simone.furini@unibo.it   Phone: +39 0547339113  
+ 
+ 
+• Farzam Sheikhzadeh Hesari  
+Associate Professor of Physiology  
+Department of Animal Biology, Faculty of Natural Science  
+Email: fsheikhzadeh@tabrizu.ac.ir  Phone: +98 4133392711   
+ 
+
