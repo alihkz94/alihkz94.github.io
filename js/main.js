@@ -301,17 +301,6 @@ if (projectsGrid) {
     });
 }
 
-// Dynamic Publication List
-const publications = [
-    {
-        title: 'Title of Publication 1',
-        authors: 'Authors et al.',
-        journal: 'Journal Name',
-        year: '2023',
-        link: '#'
-    },
-    // Add more publications as needed
-];
 
 const publicationsList = document.querySelector('.publications-list');
 if (publicationsList) {
