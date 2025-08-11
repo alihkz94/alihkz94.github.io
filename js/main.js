@@ -268,22 +268,7 @@ if (contactForm) {
 }
 
 
-const projectsGrid = document.querySelector('.projects-grid');
-if (projectsGrid) {
-    projects.forEach(project => {
-        const projectCard = document.createElement('div');
-        projectCard.className = 'project-card fade-in';
-        projectCard.innerHTML = `
-            <h3>${project.title}</h3>
-            <p>${project.description}</p>
-            <div class="project-technologies">
-                ${project.technologies.map(tech => `<span>${tech}</span>`).join('')}
-            </div>
-            <a href="${project.link}" class="btn primary">View Project</a>
-        `;
-        projectsGrid.appendChild(projectCard);
-    });
-}
+// Removed dynamic projects injection (static project cards are defined in HTML)
 
 
 // Removed dynamic publications injection (static markup now maintained in index.html)
