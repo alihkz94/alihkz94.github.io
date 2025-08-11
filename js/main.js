@@ -37,11 +37,17 @@ $(document).ready(function() {
 
 
   function onScroll(event) {
-    if ($('.home').length) {
+    if ($('.hero').length) {
       var scrollPos = $(document).scrollTop();
-      $('nav ul li a').each(function() {
+      $('.nav-links a').each(function() {
         var currLink = $(this);
         var refElement = $(currLink.attr("href"));
+        if (refElement.position() && refElement.position().top <= scrollPos + 100 && refElement.position().top + refElement.height() > scrollPos) {
+          $('.nav-links li a').removeClass("active");
+          currLink.addClass("active");
+        } else {
+          currLink.removeClass("active");
+        }
       });
     }
   }
@@ -67,8 +73,18 @@ $(document).ready(function() {
   //  // RESPONSIVE MENU
   // ========================================================================= //
 
-  $('.responsive').on('click', function(e) {
-    $('.nav-menu').slideToggle();
+  $('.hamburger').on('click', function(e) {
+    e.preventDefault();
+    $('.nav-links').slideToggle();
+    $(this).toggleClass('active');
+  });
+
+  // Close menu when clicking on a link
+  $('.nav-links a').on('click', function() {
+    if ($(window).width() < 768) {
+      $('.nav-links').slideUp();
+      $('.hamburger').removeClass('active');
+    }
   });
 
   // ========================================================================= //
@@ -78,11 +94,13 @@ $(document).ready(function() {
   var typed = $(".typed");
 
   $(function() {
-    typed.typed({
-      strings: ["Alex Smith.", "Designer.", "Developer.", "Freelancer.", "Photographer"],
-      typeSpeed: 100,
-      loop: true,
-    });
+    if (typed.length) {
+      typed.typed({
+        strings: ["Bioinformatician.", "Ph.D. Researcher.", "Data Scientist.", "Pipeline Developer.", "Computational Biologist."],
+        typeSpeed: 100,
+        loop: true,
+      });
+    }
   });
 
 
