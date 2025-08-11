@@ -267,22 +267,6 @@ if (contactForm) {
     });
 }
 
-// Dynamic Project Cards
-const projects = [
-    {
-        title: 'Genomic Analysis Tool',
-        description: 'A Python-based tool for analyzing genomic sequences and identifying patterns.',
-        technologies: ['Python', 'Bioinformatics', 'Machine Learning'],
-        link: '#'
-    },
-    {
-        title: 'Data Visualization Platform',
-        description: 'Interactive platform for visualizing biological data and research findings.',
-        technologies: ['JavaScript', 'D3.js', 'React'],
-        link: '#'
-    },
-    // Add more projects as needed
-];
 
 const projectsGrid = document.querySelector('.projects-grid');
 if (projectsGrid) {
