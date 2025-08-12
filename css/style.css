@@ -215,6 +215,41 @@ h1, h2, h3, h4, h5, h6 {
     margin-top: 2rem;
 }
 
+/* Alignment & spacing adjustments for About section (Education vs Expertise) */
+.about-grid { /* ensure top alignment of columns */
+    align-items: start;
+}
+
+/* Remove extra top/bottom margin that pushed Education block down compared to Expertise */
+.about-grid .education {
+    margin: 0; /* previously 2rem 0 */
+}
+
+/* Harmonize heading spacing inside education items */
+.education-item h4 {
+    margin-bottom: .35rem;
+    line-height: 1.25;
+}
+
+.education-item .institution {
+    margin-bottom: .15rem;
+}
+
+.education-item .period {
+    margin-bottom: .4rem;
+}
+
+/* Tighten paragraph spacing for research focus line */
+.education-item p {
+    margin: .3rem 0 0; /* reduce large space below period */
+    font-size: .9rem;
+}
+
+/* Optional: ensure Expertise (skills) block heading aligns visually */
+.about-grid .skills h3 {
+    margin-top: 0;
+}
+
 .skill-categories {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(180px,1fr));
