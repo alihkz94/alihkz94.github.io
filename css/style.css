@@ -250,6 +250,11 @@ h1, h2, h3, h4, h5, h6 {
     margin-top: 0;
 }
 
+/* Subtle vertical nudge so Expertise aligns with Education heading */
+.about-grid .skills {
+    margin-top: -4px; /* adjust if further fine-tuning needed */
+}
+
 .skill-categories {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(180px,1fr));
