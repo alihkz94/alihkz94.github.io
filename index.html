@@ -1,85 +1,406 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-KPW6QJ75');</script>
+<!-- End Google Tag Manager -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ali Hakimzadeh | Bioinformatician at University of Tartu</title>
-  <meta name="keywords" content="bioinformatics, computational biology, metabarcoding, metagenomics, University of Tartu, PipeCraft2, EUKARYOME">
-  <meta name="description" content="Ali Hakimzadeh is a Bioinformatician at University of Tartu, specializing in metabarcoding, metagenomics, transcriptomics, and long-read amplicon analysis.">
+  <title>Ali Hakimzadeh — Bioinformatician · University of Tartu</title>
+  <meta name="description" content="Ali Hakimzadeh — Bioinformatician at University of Tartu. Specializing in long DNA marker analysis, microbiome and fungal eDNA barcoding, and scalable omics pipelines.">
+  <meta name="keywords" content="bioinformatics, omics, metabarcoding, metagenomics, eDNA, University of Tartu, Ali Hakimzadeh">
 
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Source+Serif+4:wght@400;600;700&display=swap" rel="stylesheet">
-  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
-  <link href="lib/hover/hover.min.css" rel="stylesheet">
-  <link href="css/style.css" rel="stylesheet">
-  <link href="css/responsive.css" rel="stylesheet">
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+  <!-- AOS -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- Site CSS -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Favicon -->
   <link rel="shortcut icon" href="images/favicon.png">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 
 <body>
-  <nav class="navbar">
-    <div class="container">
-      <div class="logo">AH</div>
-      <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="research.html">Research</a></li>
-        <li><a href="experience.html">Experience</a></li>
-        <li><a href="projects.html">Projects</a></li>
-        <li><a href="publications.html">Publications</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-      <div class="hamburger">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-    </div>
-  </nav>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KPW6QJ75"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
-  <section class="hero landing-hero">
-    <div class="container">
-      <div class="hero-content">
-        <p class="hero-kicker">Ali Hakimzadeh</p>
-        <h1>Bioinformatician at University of Tartu</h1>
-        <h2>Computational Biology and Omics Data Analysis</h2>
-        <p>Computational biology for metabarcoding, metagenomics, transcriptomics, and long-read amplicon quality control.</p>
-        <div class="cta-buttons">
-          <a href="projects.html" class="btn primary">Explore Projects</a>
-          <a href="Ali_Hakimzadeh_CV.pdf" class="btn secondary" target="_blank">Download CV</a>
+<!-- ═══════════════════════════════════════════════════════════════ NAV ══ -->
+<nav class="site-nav" role="navigation" aria-label="Main navigation">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo" aria-label="Ali Hakimzadeh home">AH</a>
+    <ul class="nav-links" role="list">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="research.html">Research</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="publications.html">Publications</a></li>
+      <li><a href="experience.html">Experience</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <button class="nav-hamburger" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+<div class="nav-mobile" role="navigation" aria-label="Mobile navigation">
+  <a href="index.html">Home</a>
+  <a href="research.html">Research</a>
+  <a href="projects.html">Projects</a>
+  <a href="publications.html">Publications</a>
+  <a href="experience.html">Experience</a>
+  <a href="contact.html">Contact</a>
+</div>
+
+<!-- ════════════════════════════════════════════════════════════════ HERO ══ -->
+<section class="hero" id="home" aria-label="Hero">
+  <canvas id="dna-canvas" aria-hidden="true"></canvas>
+  <div class="hero-overlay" aria-hidden="true"></div>
+
+  <div class="container">
+    <div class="hero-content">
+      <div class="hero-eyebrow">
+        <div class="hero-eyebrow-line"></div>
+        <span class="label">Bioinformatician · University of Tartu</span>
+      </div>
+
+      <h1 class="hero-name">Ali<br>Hakimzadeh</h1>
+
+      <p class="hero-title">Bioinformatics Engineer &amp; Omics Data Analysis</p>
+      <p class="hero-subtitle">Advancing biological research through scalable computational methods</p>
+
+      <div class="hero-ctas">
+        <a href="projects.html" class="btn btn--primary">
+          <i class="fas fa-flask" aria-hidden="true"></i> Explore Projects
+        </a>
+        <a href="Ali_Hakimzadeh_CV.pdf" class="btn btn--amber" download>
+          <i class="fas fa-download" aria-hidden="true"></i> Download CV
+        </a>
+        <a href="contact.html" class="btn btn--outline">
+          <i class="fas fa-envelope" aria-hidden="true"></i> Get in Touch
+        </a>
+      </div>
+
+      <div class="hero-stats">
+        <div>
+          <span class="hero-stat-num">5+</span>
+          <div class="hero-stat-label">Publications</div>
+        </div>
+        <div>
+          <span class="hero-stat-num">4+</span>
+          <div class="hero-stat-label">Years Research</div>
+        </div>
+        <div>
+          <span class="hero-stat-num">6</span>
+          <div class="hero-stat-label">Active Projects</div>
+        </div>
+        <div>
+          <span class="hero-stat-num">3</span>
+          <div class="hero-stat-label">Countries</div>
         </div>
       </div>
     </div>
-  </section>
+  </div>
 
-  <section class="about compact-about">
-    <div class="container">
-      <h2 class="section-title">About Me</h2>
-      <div class="about-content">
-        <div class="about-image">
-          <img src="images/ali_professional.jpg" alt="Ali Hakimzadeh - Bioinformatician at University of Tartu">
+  <div class="hero-scroll" aria-hidden="true">
+    <div class="hero-scroll-line"></div>
+    <span>Scroll</span>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════ ABOUT ══ -->
+<section class="section section--dark" id="about">
+  <div class="container">
+    <div class="about-grid">
+
+      <!-- Image -->
+      <div class="about-image-wrap" data-aos="fade-right">
+        <div class="about-image-frame">
+          <img src="images/ali_professional.jpg"
+               alt="Ali Hakimzadeh — Bioinformatician at University of Tartu"
+               loading="lazy">
         </div>
-        <div class="about-text">
-          <p class="lead">Bioinformatician at University of Tartu, specialized in long DNA marker analysis, microbiome and fungal eDNA barcoding, and scalable omics pipelines.</p>
-          <p>I combine molecular and computational methods to design robust analysis workflows and high-quality references for environmental and biomedical datasets.</p>
+        <div class="about-image-badge">
+          <span class="num">4+</span>
+          <div class="txt">Years at<br>U. Tartu</div>
         </div>
       </div>
-    </div>
-  </section>
 
-  <footer class="footer">
-    <div class="container">
-      <p>&copy; 2026 Ali Hakimzadeh. All rights reserved. | Bioinformatician at University of Tartu</p>
-    </div>
-  </footer>
+      <!-- Text -->
+      <div class="about-text" data-aos="fade-left" data-aos-delay="100">
+        <span class="label">About</span>
+        <div class="divider"></div>
+        <h2>Decoding Life<br>Through Data</h2>
 
-  <script src="lib/jquery/jquery.min.js"></script>
-  <script src="lib/jquery/jquery-migrate.min.js"></script>
-  <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-  <script src="lib/magnific-popup/magnific-popup.min.js"></script>
-  <script src="js/main.js"></script>
+        <p>I am a Bioinformatician at the University of Tartu, specialized in long DNA marker analysis, microbiome and fungal eDNA barcoding, and scalable omics pipelines.</p>
+
+        <p>My work combines molecular and computational methods to design robust analysis workflows and high-quality reference databases for environmental and biomedical datasets — bridging ecology, genomics, and machine learning.</p>
+
+        <p>Currently contributing to PipeCraft2, EUKARYOME, and the TREC international coastal sampling initiative across European coastlines.</p>
+
+        <div class="about-links">
+          <a href="https://github.com/alihkz94" target="_blank" rel="noopener" class="about-link">
+            <i class="fab fa-github"></i> GitHub
+          </a>
+          <a href="https://www.linkedin.com/in/alihkz94" target="_blank" rel="noopener" class="about-link">
+            <i class="fab fa-linkedin"></i> LinkedIn
+          </a>
+          <a href="https://orcid.org/0000-0003-1336-7445" target="_blank" rel="noopener" class="about-link">
+            <i class="fab fa-orcid"></i> ORCID
+          </a>
+          <a href="https://scholar.google.com/citations?user=gJ_QCvQAAAAJ&hl=en" target="_blank" rel="noopener" class="about-link">
+            <i class="fas fa-graduation-cap"></i> Scholar
+          </a>
+          <a href="https://www.researchgate.net/profile/Ali-Hakimzadeh" target="_blank" rel="noopener" class="about-link">
+            <i class="fab fa-researchgate"></i> ResearchGate
+          </a>
+          <a href="mailto:ali.hakimzadeh@ut.ee" class="about-link">
+            <i class="fas fa-envelope"></i> Email
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════════════════════════ SKILLS ══ -->
+<section class="section section--surface" id="skills">
+  <div class="container">
+    <div class="section-header" data-aos="fade-up">
+      <span class="label">Technical Skills</span>
+      <div class="divider"></div>
+      <h2>Expertise &amp; Toolchain</h2>
+      <p class="lead">Spanning omics, computation, and large-scale bioinformatics infrastructure.</p>
+    </div>
+
+    <div class="skills-grid">
+
+      <div class="skill-group" data-aos="fade-up" data-aos-delay="0">
+        <div class="skill-group-title">Omics &amp; Sequencing</div>
+        <div class="skill-tags">
+          <span class="skill-tag">Transcriptomics</span>
+          <span class="skill-tag">WGS / WES</span>
+          <span class="skill-tag">CRISPR Screening</span>
+          <span class="skill-tag">Metabarcoding</span>
+          <span class="skill-tag">Metagenomics</span>
+          <span class="skill-tag">eDNA Barcoding</span>
+          <span class="skill-tag">scRNA-seq</span>
+        </div>
+      </div>
+
+      <div class="skill-group" data-aos="fade-up" data-aos-delay="60">
+        <div class="skill-group-title">Programming</div>
+        <div class="skill-tags">
+          <span class="skill-tag">Python</span>
+          <span class="skill-tag">R</span>
+          <span class="skill-tag">Bash</span>
+          <span class="skill-tag">Git</span>
+          <span class="skill-tag">LaTeX</span>
+        </div>
+      </div>
+
+      <div class="skill-group" data-aos="fade-up" data-aos-delay="120">
+        <div class="skill-group-title">Machine Learning</div>
+        <div class="skill-tags">
+          <span class="skill-tag">Dimensionality Reduction</span>
+          <span class="skill-tag">Clustering</span>
+          <span class="skill-tag">Hypothesis Testing</span>
+          <span class="skill-tag">scVI</span>
+          <span class="skill-tag">TensorFlow</span>
+          <span class="skill-tag">PyTorch</span>
+        </div>
+      </div>
+
+      <div class="skill-group" data-aos="fade-up" data-aos-delay="0">
+        <div class="skill-group-title">Pipeline &amp; Containers</div>
+        <div class="skill-tags">
+          <span class="skill-tag">Nextflow</span>
+          <span class="skill-tag">Snakemake</span>
+          <span class="skill-tag">Docker</span>
+          <span class="skill-tag">Singularity</span>
+        </div>
+      </div>
+
+      <div class="skill-group" data-aos="fade-up" data-aos-delay="60">
+        <div class="skill-group-title">HPC &amp; Cloud</div>
+        <div class="skill-tags">
+          <span class="skill-tag">SLURM</span>
+          <span class="skill-tag">AWS</span>
+          <span class="skill-tag">Nvidia Parabricks</span>
+        </div>
+      </div>
+
+      <div class="skill-group" data-aos="fade-up" data-aos-delay="120">
+        <div class="skill-group-title">Analysis Tools</div>
+        <div class="skill-tags">
+          <span class="skill-tag">Seurat</span>
+          <span class="skill-tag">Scanpy</span>
+          <span class="skill-tag">MAST</span>
+          <span class="skill-tag">DESeq2</span>
+          <span class="skill-tag">edgeR</span>
+          <span class="skill-tag">HISAT2</span>
+          <span class="skill-tag">STAR</span>
+          <span class="skill-tag">Samtools</span>
+          <span class="skill-tag">BEDtools</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════ RESEARCH PREVIEW ══ -->
+<section class="section section--dark" id="research-preview">
+  <div class="container">
+    <div class="section-header" data-aos="fade-up">
+      <span class="label">Research Focus</span>
+      <div class="divider"></div>
+      <h2>Areas of Investigation</h2>
+    </div>
+
+    <div class="research-grid" data-aos="fade-up" data-aos-delay="80">
+
+      <div class="research-card" data-num="01">
+        <div class="research-icon"><i class="fas fa-bacteria"></i></div>
+        <h3>Metabarcoding &amp; Metagenomics</h3>
+        <p>PipeCraft2 and EUKARYOME workflows for environmental DNA community profiling across microbiome and fungal datasets.</p>
+        <div class="research-card-tag">eDNA · PipeCraft2 · EUKARYOME</div>
+      </div>
+
+      <div class="research-card" data-num="02">
+        <div class="research-icon"><i class="fas fa-dna"></i></div>
+        <h3>Long-Read Amplicon Analysis</h3>
+        <p>Chimera detection benchmarking for PacBio and Oxford Nanopore long-read amplicon sequencing workflows.</p>
+        <div class="research-card-tag">PacBio · Nanopore · QC</div>
+      </div>
+
+      <div class="research-card" data-num="03">
+        <div class="research-icon"><i class="fas fa-microscope"></i></div>
+        <h3>Single-Cell Analysis</h3>
+        <p>scRNA-seq, CROP-seq, and CRISPR screens analyzed with ML-driven interpretation using scVI, TensorFlow, and PyTorch.</p>
+        <div class="research-card-tag">scRNA-seq · CRISPR · ML</div>
+      </div>
+
+      <div class="research-card" data-num="04">
+        <div class="research-icon"><i class="fas fa-chart-bar"></i></div>
+        <h3>Transcriptomics</h3>
+        <p>Differential expression analysis and DEASS method development for robust statistical inference in RNA-seq data.</p>
+        <div class="research-card-tag">RNA-seq · DESeq2 · DEASS</div>
+      </div>
+
+      <div class="research-card" data-num="05">
+        <div class="research-icon"><i class="fas fa-globe-europe"></i></div>
+        <h3>Environmental Genomics</h3>
+        <p>TREC project sampling across European coastlines to study biodiversity and microbial community dynamics at scale.</p>
+        <div class="research-card-tag">TREC · Coastlines · Ecology</div>
+      </div>
+
+      <div class="research-card" data-num="06">
+        <div class="research-icon"><i class="fas fa-code-branch"></i></div>
+        <h3>Pipeline Development</h3>
+        <p>Nextflow and Snakemake containerized deployments for reproducible, scalable bioinformatics workflows.</p>
+        <div class="research-card-tag">Nextflow · Docker · HPC</div>
+      </div>
+
+    </div>
+
+    <div style="text-align:center; margin-top:3rem;" data-aos="fade-up">
+      <a href="research.html" class="btn btn--outline">
+        <i class="fas fa-arrow-right"></i> Full Research Overview
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════ PUBLICATIONS PREVIEW ══ -->
+<section class="section section--surface" id="publications-preview">
+  <div class="container">
+    <div class="section-header" data-aos="fade-up">
+      <span class="label">Selected Publications</span>
+      <div class="divider"></div>
+      <h2>Peer-Reviewed Work</h2>
+    </div>
+
+    <div class="pub-list" style="max-width:900px;">
+
+      <div class="pub-card" data-aos="fade-up" data-aos-delay="0">
+        <div class="pub-header">
+          <span class="pub-journal-badge">PeerJ</span>
+          <span class="pub-year">2025</span>
+        </div>
+        <h3>Benchmarking chimera detection algorithms for long-read amplicons</h3>
+        <p class="pub-authors"><strong>Hakimzadeh A</strong>, Mikryukov V, Tedersoo L, Anslan S.</p>
+        <div class="pub-actions">
+          <a href="https://peerj.com/articles/20456/" target="_blank" rel="noopener" class="btn btn--outline btn--sm">
+            <i class="fas fa-external-link-alt"></i> Read Paper
+          </a>
+        </div>
+      </div>
+
+      <div class="pub-card" data-aos="fade-up" data-aos-delay="80">
+        <div class="pub-header">
+          <span class="pub-journal-badge">Molecular Ecology Resources</span>
+          <span class="pub-year">2023</span>
+        </div>
+        <h3>A pile of pipelines: An overview of the bioinformatics software for metabarcoding data analyses</h3>
+        <p class="pub-authors"><strong>Hakimzadeh A</strong> et al.</p>
+        <div class="pub-actions">
+          <a href="https://doi.org/10.1111/1755-0998.13847" target="_blank" rel="noopener" class="btn btn--outline btn--sm">
+            <i class="fas fa-external-link-alt"></i> Read Paper
+          </a>
+        </div>
+      </div>
+
+    </div>
+
+    <div style="text-align:center; margin-top:2.5rem;" data-aos="fade-up">
+      <a href="publications.html" class="btn btn--outline">
+        <i class="fas fa-book"></i> All Publications
+      </a>
+      <a href="https://scholar.google.com/citations?user=gJ_QCvQAAAAJ&hl=en" target="_blank" rel="noopener" class="btn btn--outline" style="margin-left:0.75rem;">
+        <i class="fas fa-graduation-cap"></i> Google Scholar
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════════════════════════ FOOTER ══ -->
+<footer class="site-footer" role="contentinfo">
+  <div class="container">
+    <div class="footer-inner">
+      <div class="footer-logo">AH</div>
+      <nav class="footer-links" aria-label="Footer navigation">
+        <a href="index.html">Home</a>
+        <a href="research.html">Research</a>
+        <a href="projects.html">Projects</a>
+        <a href="publications.html">Publications</a>
+        <a href="experience.html">Experience</a>
+        <a href="contact.html">Contact</a>
+        <a href="blog-grid.html">Blog</a>
+      </nav>
+    </div>
+    <p class="footer-copy">
+      &copy; 2025 Ali Hakimzadeh · Bioinformatician at University of Tartu · Tartu, Estonia
+      <span style="margin:0 0.5rem; color:var(--border-mid);">|</span>
+      <a href="mailto:ali.hakimzadeh@ut.ee" style="color:var(--teal-muted); transition:color 0.2s;">ali.hakimzadeh@ut.ee</a>
+    </p>
+  </div>
+</footer>
+
+<!-- Scripts -->
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script src="js/main.js"></script>
 </body>
-
 </html>

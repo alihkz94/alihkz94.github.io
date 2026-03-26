@@ -1,237 +1,297 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <!-- meta -->
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>So Lets Make the Most Is Beautiful — Blog · Ali Hakimzadeh</title>
+  <meta name="description" content="Blog post by Ali Hakimzadeh on bioinformatics and scientific clarity.">
 
-  <title>Folio - Blog Singlee</title>
-  <meta content="" name="keywords">
-  <meta content="" name="description">
-
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,500,500i,600,600i,700,700i|Playfair+Display:400,400i,700,700i,900,900i" rel="stylesheet">
-
-  <!-- Bootstrap CSS File -->
-  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-  <!-- Libraries CSS Files -->
-  <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
-  <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-  <link href="lib/magnific-popup/magnific-popup.css" rel="stylesheet">
-  <link href="lib/hover/hover.min.css" rel="stylesheet">
-
-  <!-- Blog Stylesheet File -->
-  <link href="css/blog.css" rel="stylesheet">
-
-  <!-- Main Stylesheet File -->
-  <link href="css/style.css" rel="stylesheet">
-
-  <!-- Responsive css -->
-  <link href="css/responsive.css" rel="stylesheet">
-
-  <!-- Favicon -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
   <link rel="shortcut icon" href="images/favicon.png">
 
-  <!-- =======================================================
-    Theme Name: Folio
-    Theme URL: https://bootstrapmade.com/folio-bootstrap-portfolio-template/
-    Author: BootstrapMade.com
-    Author URL: https://bootstrapmade.com
-  ======================================================= -->
-</head>
+  <style>
+    /* Blog single extra styles */
+    .blog-post-meta {
+      display: flex;
+      align-items: center;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+      margin-bottom: 2rem;
+      padding-bottom: 1.5rem;
+      border-bottom: 1px solid var(--border);
+    }
 
+    .blog-post-meta span {
+      font-family: var(--font-mono);
+      font-size: 0.68rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+    }
+
+    .blog-post-meta span i { margin-right: 0.35rem; color: var(--teal-muted); }
+
+    .blog-post-body p {
+      font-size: 1.05rem;
+      color: var(--text-secondary);
+      line-height: 1.85;
+      margin-bottom: 1.5rem;
+    }
+
+    .blog-post-body blockquote {
+      border-left: 3px solid var(--teal-base);
+      padding: 1rem 1.5rem;
+      margin: 2rem 0;
+      background: var(--bg-card);
+      font-family: var(--font-serif);
+      font-size: 1.15rem;
+      font-style: italic;
+      color: var(--text-primary);
+    }
+
+    /* Comments */
+    .comments-section {
+      margin-top: 3rem;
+      padding-top: 3rem;
+      border-top: 1px solid var(--border);
+    }
+
+    .comments-section h5 {
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+    }
+
+    .comment-item {
+      display: flex;
+      gap: 1rem;
+      margin-bottom: 2rem;
+    }
+
+    .comment-avatar {
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      object-fit: cover;
+      flex-shrink: 0;
+      border: 1px solid var(--border-mid);
+      filter: grayscale(40%);
+    }
+
+    .comment-body {}
+    .comment-author {
+      font-family: var(--font-mono);
+      font-size: 0.72rem;
+      letter-spacing: 0.08em;
+      color: var(--teal-base);
+      margin-bottom: 0.2rem;
+    }
+
+    .comment-date {
+      font-family: var(--font-mono);
+      font-size: 0.62rem;
+      letter-spacing: 0.06em;
+      color: var(--text-faint);
+      margin-bottom: 0.5rem;
+    }
+
+    .comment-text {
+      font-size: 0.88rem;
+      color: var(--text-muted);
+      line-height: 1.65;
+    }
+
+    .comment-reply {
+      font-family: var(--font-mono);
+      font-size: 0.62rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--teal-muted);
+      margin-top: 0.5rem;
+      display: inline-block;
+      transition: color var(--trans-fast);
+    }
+
+    .comment-reply:hover { color: var(--teal-bright); }
+
+    .comment-nested {
+      margin-left: 3.5rem;
+      margin-top: 1.5rem;
+    }
+
+    /* Comment form */
+    .comment-form {
+      margin-top: 3rem;
+      padding-top: 2rem;
+      border-top: 1px solid var(--border);
+    }
+
+    .comment-form h5 {
+      font-size: 1.2rem;
+      margin-bottom: 1.5rem;
+    }
+  </style>
+</head>
 <body>
 
-  <!-- start section navbar -->
-  <nav id="main-nav-subpage" class="subpage-nav">
-    <div class="row">
-      <div class="container">
+<!-- NAV -->
+<nav class="site-nav" role="navigation">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">AH</a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="research.html">Research</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="publications.html">Publications</a></li>
+      <li><a href="experience.html">Experience</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <button class="nav-hamburger" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+<div class="nav-mobile">
+  <a href="index.html">Home</a>
+  <a href="research.html">Research</a>
+  <a href="projects.html">Projects</a>
+  <a href="publications.html">Publications</a>
+  <a href="experience.html">Experience</a>
+  <a href="contact.html">Contact</a>
+</div>
 
-        <div class="logo">
-          <a href="index.html"><img src="images/logo.png" alt="logo"></a>
-        </div>
+<!-- CONTENT -->
+<section class="section section--dark" style="padding-top: 8rem;">
+  <div class="container--narrow">
 
-        <div class="responsive"><i data-icon="m" class="ion-navicon-round"></i></div>
+    <div class="blog-single-content" data-aos="fade-up">
 
-        <ul class="nav-menu list-unstyled">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="research.html">Research</a></li>
-          <li><a href="projects.html">Projects</a></li>
-          <li><a href="publications.html">Publications</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
+      <div style="margin-bottom:1.5rem;">
+        <a href="blog-grid.html" class="label label--muted" style="text-decoration:none; display:inline-flex; align-items:center; gap:0.4rem;">
+          <i class="fas fa-arrow-left" style="font-size:0.65rem;"></i> Back to Journal
+        </a>
       </div>
-    </div>
-  </nav>
-  <!-- End section navbar -->
-  <!-- start section main content -->
-  <div class="main-content paddsection">
-    <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-md-8 col-md-offset-2">
-          <div class="row">
-            <div class="container-main single-main">
-              <div class="col-md-12">
-                <div class="block-main mb-30">
-                  <img src="images/blog-post-big.jpg" class="img-responsive" alt="reviews2">
-                  <div class="content-main single-post padDiv">
-                    <div class="journal-txt">
-                      <h4><a href="#">SO LETS MAKE THE MOST IS BEAUTIFUL</a></h4>
-                    </div>
-                    <div class="post-meta">
-                      <ul class="list-unstyled mb-0">
-                        <li class="author">by:<a href="#">medsign</a></li>
-                        <li class="date">date:<a href="#">March 31, 2017</a></li>
-                        <li class="commont"><i class="ion-ios-heart-outline"></i><a href="#">3 Comments</a></li>
-                      </ul>
-                    </div>
-                    <p class="mb-30">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to
-                      using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web
-                      sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
-                    <p class="mb-30">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type
-                      specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
-                      and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-                    <blockquote>If you are still looking for that one person who will change your life, take a look in the mirror.</blockquote>
-                    <p class="mb-30">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in
-                      Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections
-                      1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum,
-                      "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-12">
-                <div class="comments text-left padDiv mb-30">
-                  <div class="entry-comments">
-                    <h6 class="mb-30">4 comments</h6>
-                    <ul class="entry-comments-list list-unstyled">
-                      <li>
-                        <div class="entry-comments-item">
-                          <img src="images/avatar.jpg" class="entry-comments-avatar" alt="">
-                          <div class="entry-comments-body">
-                            <span class="entry-comments-author">Sommer Christian</span>
-                            <span><a href="#">fev 14, 2018 at 12:48 pm</a></span>
-                            <p class="mb-10">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam justo, ullamcorper tincidunt pellentesque in, condimentum ut enim. Aenean at pharetra diam, quis vulputate urna. </p>
-                            <a class="rep" href="#">Reply</a>
-                          </div>
-                        </div>
-                        <ul class="entry-comments-reply list-unstyled">
-                          <li>
-                            <div class="entry-comments-item">
-                              <img src="images/avatar.jpg" class="entry-comments-avatar" alt="">
-                              <div class="entry-comments-body">
-                                <span class="entry-comments-author">Sara Smith</span>
-                                <span><a href="#">fev 14, 2018 at 12:51 pm</a></span>
-                                <p class="mb-10">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam justo, ullamcorper tincidunt pellentesque in, condimentum ut enim. Aenean at pharetra diam, quis vulputate urna.</p>
-                                <a class="rep" href="#">Reply</a>
-                              </div>
-                            </div>
-                          </li>
-                        </ul>
-                      </li>
-                      <li>
-                        <div class="entry-comments-item">
-                          <img src="images/avatar.jpg" class="entry-comments-avatar" alt="">
-                          <div class="entry-comments-body">
-                            <span class="entry-comments-author">Andrew Lupkin</span>
-                            <span><a href="#">fev 14, 2018 at 12:55 pm</a></span>
-                            <p class="mb-10">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam justo, ullamcorper tincidunt pellentesque in, condimentum ut enim. Aenean at pharetra diam, quis vulputate urna. </p>
-                            <a class="rep" href="#">Reply</a>
-                          </div>
-                        </div>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-12">
-                <div class="cmt padDiv">
-                  <form id="comment-form" method="post" action="" role="form">
-                    <div class="row">
-                        <div class="col-lg-6">
-                          <div class="form-group">
-                            <input id="form_name" type="text" name="name" class="form-control" placeholder="Name *" required="required">
-                          </div>
-                        </div>
-                        <div class="col-lg-6">
-                          <div class="form-group">
-                            <input id="form_email" type="email" name="email" class="form-control" placeholder="email *" required="required">
-                          </div>
-                        </div>
-                        <div class="col-md-12">
-                          <div class="form-group">
-                            <input id="form_name" type="text" name="website" class="form-control" placeholder="Website">
-                          </div>
-                        </div>
-                        <div class="col-lg-12">
-                          <div class="form-group">
-                            <textarea id="form_message" name="message" class="form-control" placeholder="Message *" style="height: 200px;" required="required"></textarea>
-                          </div>
-                        </div>
-                        <div class="col-lg-12">
-                          <input type="submit" class="btn btn-defeault btn-send" value="Send message">
-                        </div>
-                    </div>
-                  </form>
+
+      <h1 style="font-size: clamp(2rem, 5vw, 3.5rem); margin-bottom:1.5rem; line-height:1.15;">
+        So Lets Make the Most Is Beautiful
+      </h1>
+
+      <div class="blog-post-meta">
+        <span><i class="fas fa-user"></i> Ali Hakimzadeh</span>
+        <span><i class="fas fa-calendar"></i> March 31, 2017</span>
+        <span><i class="fas fa-comments"></i> 4 Comments</span>
+      </div>
+
+      <img src="images/blog-post-big.jpg" alt="Blog post header image" loading="lazy">
+
+      <div class="blog-post-body" style="margin-top:2rem;">
+
+        <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.</p>
+
+        <p>Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+
+        <blockquote>
+          If you are still looking for that one person who will change your life, take a look in the mirror.
+        </blockquote>
+
+        <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source.</p>
+
+      </div>
+
+      <!-- Comments -->
+      <div class="comments-section">
+        <h5>4 Comments</h5>
+
+        <div class="comment-item">
+          <img src="images/avatar.jpg" alt="Sommer Christian" class="comment-avatar">
+          <div class="comment-body">
+            <div class="comment-author">Sommer Christian</div>
+            <div class="comment-date">Feb 14, 2018 at 12:48 pm</div>
+            <p class="comment-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam justo, ullamcorper tincidunt pellentesque in, condimentum ut enim. Aenean at pharetra diam, quis vulputate urna.</p>
+            <a href="#" class="comment-reply">Reply</a>
+
+            <div class="comment-nested">
+              <div class="comment-item">
+                <img src="images/avatar.jpg" alt="Sara Smith" class="comment-avatar">
+                <div class="comment-body">
+                  <div class="comment-author">Sara Smith</div>
+                  <div class="comment-date">Feb 14, 2018 at 12:51 pm</div>
+                  <p class="comment-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam justo, ullamcorper tincidunt pellentesque in, condimentum ut enim. Aenean at pharetra diam, quis vulputate urna.</p>
+                  <a href="#" class="comment-reply">Reply</a>
                 </div>
               </div>
             </div>
           </div>
         </div>
+
+        <div class="comment-item">
+          <img src="images/avatar.jpg" alt="Andrew Lupkin" class="comment-avatar">
+          <div class="comment-body">
+            <div class="comment-author">Andrew Lupkin</div>
+            <div class="comment-date">Feb 14, 2018 at 12:55 pm</div>
+            <p class="comment-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam justo, ullamcorper tincidunt pellentesque in, condimentum ut enim. Aenean at pharetra diam, quis vulputate urna.</p>
+            <a href="#" class="comment-reply">Reply</a>
+          </div>
+        </div>
       </div>
+
+      <!-- Comment Form -->
+      <div class="comment-form">
+        <h5>Leave a Comment</h5>
+        <form method="post" action="">
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label" for="c-name">Name *</label>
+              <input class="form-input" type="text" id="c-name" name="name" required>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="c-email">Email *</label>
+              <input class="form-input" type="email" id="c-email" name="email" required>
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="c-website">Website</label>
+            <input class="form-input" type="url" id="c-website" name="website">
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="c-message">Message *</label>
+            <textarea class="form-textarea" id="c-message" name="message" required></textarea>
+          </div>
+          <button type="submit" class="btn btn--primary">
+            <i class="fas fa-paper-plane"></i> Post Comment
+          </button>
+        </form>
+      </div>
+
     </div>
   </div>
-  <!--  </div> -->
-  <!-- start section main content -->
+</section>
 
-  <!-- start section footer -->
-  <div id="footer" class="text-center">
-    <div class="container">
-      <div class="socials-media text-center">
-
-        <ul class="list-unstyled">
-          <li><a href="#"><i class="ion-social-facebook"></i></a></li>
-          <li><a href="#"><i class="ion-social-twitter"></i></a></li>
-          <li><a href="#"><i class="ion-social-instagram"></i></a></li>
-          <li><a href="#"><i class="ion-social-googleplus"></i></a></li>
-          <li><a href="#"><i class="ion-social-tumblr"></i></a></li>
-          <li><a href="#"><i class="ion-social-dribbble"></i></a></li>
-        </ul>
-
-      </div>
-
-      <p>&copy; Copyrights Folio. All rights reserved.</p>
-
-      <div class="credits">
-        <!--
-          All the links in the footer should remain intact.
-          You can delete the links only if you purchased the pro version.
-          Licensing information: https://bootstrapmade.com/license/
-          Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=Folio
-        -->
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
-      </div>
-
+<!-- FOOTER -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-inner">
+      <div class="footer-logo">AH</div>
+      <nav class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="research.html">Research</a>
+        <a href="projects.html">Projects</a>
+        <a href="publications.html">Publications</a>
+        <a href="experience.html">Experience</a>
+        <a href="contact.html">Contact</a>
+      </nav>
     </div>
+    <p class="footer-copy">&copy; 2025 Ali Hakimzadeh · University of Tartu · <a href="mailto:ali.hakimzadeh@ut.ee" style="color:var(--teal-muted);">ali.hakimzadeh@ut.ee</a></p>
   </div>
-  <!-- End section footer -->
+</footer>
 
-  <!-- JavaScript Libraries -->
-  <script src="lib/jquery/jquery.min.js"></script>
-  <script src="lib/jquery/jquery-migrate.min.js"></script>
-  <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="lib/typed/typed.js"></script>
-  <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-  <script src="lib/magnific-popup/magnific-popup.min.js"></script>
-  <script src="lib/isotope/isotope.pkgd.min.js"></script>
-
-  <!-- Contact Form JavaScript File -->
-  <script src="contactform/contactform.js"></script>
-
-  <!-- Template Main Javascript File -->
-  <script src="js/main.js"></script>
-
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script src="js/main.js"></script>
 </body>
-
 </html>

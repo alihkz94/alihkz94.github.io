@@ -3,35 +3,204 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Publications | Ali Hakimzadeh</title>
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Source+Serif+4:wght@400;600;700&display=swap" rel="stylesheet">
-  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="css/style.css" rel="stylesheet">
-  <link href="css/responsive.css" rel="stylesheet">
+  <title>Publications — Ali Hakimzadeh</title>
+  <meta name="description" content="Peer-reviewed publications by Ali Hakimzadeh, Bioinformatician at University of Tartu.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
   <link rel="shortcut icon" href="images/favicon.png">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-  <nav class="navbar"><div class="container"><div class="logo">AH</div><ul class="nav-links"><li><a href="index.html">Home</a></li><li><a href="research.html">Research</a></li><li><a href="experience.html">Experience</a></li><li><a href="projects.html">Projects</a></li><li><a href="publications.html">Publications</a></li><li><a href="contact.html">Contact</a></li></ul><div class="hamburger"><span></span><span></span><span></span></div></div></nav>
 
-  <main class="page-shell">
-    <section class="page-hero"><div class="container"><h1>Publications</h1><p>Peer-reviewed work in metabarcoding, computational biology, and long-read methodology.</p></div></section>
+<!-- NAV -->
+<nav class="site-nav" role="navigation">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">AH</a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="research.html">Research</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="publications.html" class="active">Publications</a></li>
+      <li><a href="experience.html">Experience</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <button class="nav-hamburger" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+<div class="nav-mobile">
+  <a href="index.html">Home</a>
+  <a href="research.html">Research</a>
+  <a href="projects.html">Projects</a>
+  <a href="publications.html" class="active">Publications</a>
+  <a href="experience.html">Experience</a>
+  <a href="contact.html">Contact</a>
+</div>
 
-    <section class="publications"><div class="container"><div class="publications-list">
-      <div class="publication-item featured"><div class="pub-content"><h3>A pile of pipelines: An overview of the bioinformatics software for metabarcoding data analyses</h3><p class="journal">Molecular Ecology Resources</p><p class="authors"><strong>Ali Hakimzadeh</strong> et al.</p><div class="pub-links"><a href="https://doi.org/10.1111/1755-0998.13847" target="_blank" class="pub-link"><i class="fas fa-external-link-alt"></i> DOI</a></div></div></div>
-      <div class="publication-item featured"><div class="pub-content"><h3>EUKARYOME: the rRNA gene reference database for identification of all eukaryotes</h3><p class="journal">Database (Oxford University Press)</p><p class="authors"><strong>Ali Hakimzadeh</strong> et al.</p><div class="pub-links"><a href="https://doi.org/10.1093/database/baae043" target="_blank" class="pub-link"><i class="fas fa-external-link-alt"></i> DOI</a></div></div></div>
-      <div class="publication-item"><div class="pub-content"><h3>The Impact of Oil Palm Plantations and Pastures on Benthic Prokaryotic and Fungal Communities in Tropical Streams</h3><p class="journal">Freshwater Biology</p><p class="authors">Oscar Alberto Rojas-Castillo, <strong>Ali Hakimzadeh</strong>, Leho Tedersoo, Dean Jacobsen, Sebastian Kepfer-Rojas</p><div class="pub-links"><a href="https://doi.org/10.1111/fwb.14376" target="_blank" class="pub-link"><i class="fas fa-external-link-alt"></i> DOI</a></div></div></div>
+<!-- PAGE HERO -->
+<section class="page-hero section--dark">
+  <div class="container">
+    <span class="label">Scholarly Output</span>
+    <div class="divider"></div>
+    <h1>Publications</h1>
+    <p>Peer-reviewed contributions to bioinformatics, reference databases, and environmental genomics.</p>
+  </div>
+</section>
 
-      <div class="publication-item featured"><div class="pub-content"><h3>Invisible passengers: the diversity and invasion risks of fungi and bacteria transported via footwear of international airport passengers</h3><p class="journal">Biological Invasions (Springer), 2026</p><p class="authors">Niloufar Hagh-Doust, <strong>Ali Hakimzadeh</strong>, John Yangyuoru Kupagme, Glen Dierickx, Ovidiu Copot, Leho Tedersoo</p><p class="pub-abstract">This study evaluates microbial transport risks through passenger footwear and highlights the hidden mobility of fungal and bacterial communities across international hubs. Findings emphasize biosecurity relevance and the need for surveillance strategies in high-throughput travel pathways.</p><div class="pub-links"><a href="https://link.springer.com/article/10.1007/s10530-025-03741-y" target="_blank" class="pub-link"><i class="fas fa-external-link-alt"></i> Published Article</a></div></div></div>
+<!-- PUBLICATIONS -->
+<section class="section section--surface">
+  <div class="container--narrow">
 
-      <div class="publication-item featured"><div class="pub-content"><h3>Benchmarking chimera detection algorithms for long-read amplicons</h3><p class="journal">PeerJ, 2025</p><p class="authors"><strong>Ali Hakimzadeh</strong>, Vladimir Mikryukov, Leho Tedersoo, Sten Anslan</p><p class="pub-abstract">This paper provides a comparative benchmark of chimera-detection tools in long-read amplicon workflows and highlights tool-specific behavior under realistic sequencing conditions. It offers practical guidance for method selection and parameter tuning in PacBio and Oxford Nanopore pipelines.</p><div class="pub-links"><a href="https://peerj.com/articles/20456/" target="_blank" class="pub-link"><i class="fas fa-external-link-alt"></i> Published Article</a></div></div></div>
+    <!-- Filters -->
+    <div class="pub-filters" data-aos="fade-up">
+      <button class="pub-filter active" data-filter="all">All</button>
+      <button class="pub-filter" data-filter="published">Published</button>
+      <button class="pub-filter" data-filter="in-progress">In Progress</button>
     </div>
 
-    <div class="publications-note"><p><i class="fas fa-graduation-cap"></i> Full publication list on <a href="https://scholar.google.com/citations?user=gJ_QCvQAAAAJ&hl=en" target="_blank">Google Scholar</a></p></div>
-    </div></section>
-  </main>
+    <!-- Publication List -->
+    <div class="pub-list">
 
-  <footer class="footer"><div class="container"><p>&copy; 2026 Ali Hakimzadeh | Bioinformatician at University of Tartu</p></div></footer>
-  <script src="lib/jquery/jquery.min.js"></script><script src="js/main.js"></script>
+      <!-- 1 -->
+      <div class="pub-card" data-status="published" data-aos="fade-up" data-aos-delay="0">
+        <div class="pub-header">
+          <span class="pub-journal-badge">PeerJ</span>
+          <span class="pub-year">2025</span>
+        </div>
+        <h3>Benchmarking chimera detection algorithms for long-read amplicons</h3>
+        <p class="pub-authors">
+          <strong>Hakimzadeh A</strong>, Mikryukov V, Tedersoo L, Anslan S.
+        </p>
+        <div class="pub-actions">
+          <a href="https://peerj.com/articles/20456/" target="_blank" rel="noopener" class="btn btn--primary btn--sm">
+            <i class="fas fa-external-link-alt"></i> Read Paper
+          </a>
+          <a href="https://doi.org/10.7717/peerj.20456" target="_blank" rel="noopener" class="btn btn--outline btn--sm">
+            <i class="fas fa-link"></i> DOI
+          </a>
+        </div>
+      </div>
+
+      <!-- 2 -->
+      <div class="pub-card" data-status="in-progress" data-aos="fade-up" data-aos-delay="60">
+        <div class="pub-header">
+          <span class="pub-journal-badge">Biological Invasions · Springer</span>
+          <span class="pub-year">2026</span>
+        </div>
+        <h3>Invisible passengers: the diversity and invasion risks of fungi and bacteria transported via footwear of international airport passengers</h3>
+        <p class="pub-authors">
+          Hagh-Doust N, <strong>Hakimzadeh A</strong> et al.
+        </p>
+        <div class="pub-actions">
+          <a href="https://link.springer.com/article/10.1007/s10530-025-03741-y" target="_blank" rel="noopener" class="btn btn--primary btn--sm">
+            <i class="fas fa-external-link-alt"></i> Read Paper
+          </a>
+          <a href="https://doi.org/10.1007/s10530-025-03741-y" target="_blank" rel="noopener" class="btn btn--outline btn--sm">
+            <i class="fas fa-link"></i> DOI
+          </a>
+        </div>
+      </div>
+
+      <!-- 3 -->
+      <div class="pub-card" data-status="published" data-aos="fade-up" data-aos-delay="0">
+        <div class="pub-header">
+          <span class="pub-journal-badge">Freshwater Biology</span>
+          <span class="pub-year">2024</span>
+        </div>
+        <h3>The Impact of Oil Palm Plantations and Pastures on Benthic Prokaryotic and Fungal Communities in Tropical Streams</h3>
+        <p class="pub-authors">
+          Rojas-Castillo OA, <strong>Hakimzadeh A</strong> et al.
+        </p>
+        <div class="pub-actions">
+          <a href="https://doi.org/10.1111/fwb.14376" target="_blank" rel="noopener" class="btn btn--primary btn--sm">
+            <i class="fas fa-external-link-alt"></i> Read Paper
+          </a>
+          <a href="https://doi.org/10.1111/fwb.14376" target="_blank" rel="noopener" class="btn btn--outline btn--sm">
+            <i class="fas fa-link"></i> DOI
+          </a>
+        </div>
+      </div>
+
+      <!-- 4 -->
+      <div class="pub-card" data-status="published" data-aos="fade-up" data-aos-delay="60">
+        <div class="pub-header">
+          <span class="pub-journal-badge">Database · Oxford University Press</span>
+          <span class="pub-year">2024</span>
+        </div>
+        <h3>EUKARYOME: the rRNA gene reference database for identification of all eukaryotes</h3>
+        <p class="pub-authors">
+          <strong>Hakimzadeh A</strong> et al.
+        </p>
+        <div class="pub-actions">
+          <a href="https://doi.org/10.1093/database/baae043" target="_blank" rel="noopener" class="btn btn--primary btn--sm">
+            <i class="fas fa-external-link-alt"></i> Read Paper
+          </a>
+          <a href="https://doi.org/10.1093/database/baae043" target="_blank" rel="noopener" class="btn btn--outline btn--sm">
+            <i class="fas fa-link"></i> DOI
+          </a>
+        </div>
+      </div>
+
+      <!-- 5 -->
+      <div class="pub-card" data-status="published" data-aos="fade-up" data-aos-delay="0">
+        <div class="pub-header">
+          <span class="pub-journal-badge">Molecular Ecology Resources</span>
+          <span class="pub-year">2023</span>
+        </div>
+        <h3>A pile of pipelines: An overview of the bioinformatics software for metabarcoding data analyses</h3>
+        <p class="pub-authors">
+          <strong>Hakimzadeh A</strong> et al.
+        </p>
+        <div class="pub-actions">
+          <a href="https://doi.org/10.1111/1755-0998.13847" target="_blank" rel="noopener" class="btn btn--primary btn--sm">
+            <i class="fas fa-external-link-alt"></i> Read Paper
+          </a>
+          <a href="https://doi.org/10.1111/1755-0998.13847" target="_blank" rel="noopener" class="btn btn--outline btn--sm">
+            <i class="fas fa-link"></i> DOI
+          </a>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Scholar link -->
+    <div style="margin-top:3rem; padding-top:2rem; border-top:1px solid var(--border); text-align:center;" data-aos="fade-up">
+      <p style="margin-bottom:1.25rem; font-family:var(--font-mono); font-size:0.75rem; letter-spacing:0.08em; color:var(--text-muted);">
+        Full publication list available on Google Scholar
+      </p>
+      <a href="https://scholar.google.com/citations?user=gJ_QCvQAAAAJ&hl=en"
+         target="_blank" rel="noopener" class="btn btn--outline">
+        <i class="fas fa-graduation-cap"></i> View All on Google Scholar
+      </a>
+    </div>
+
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-inner">
+      <div class="footer-logo">AH</div>
+      <nav class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="research.html">Research</a>
+        <a href="projects.html">Projects</a>
+        <a href="publications.html">Publications</a>
+        <a href="experience.html">Experience</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+    <p class="footer-copy">&copy; 2025 Ali Hakimzadeh · University of Tartu · <a href="mailto:ali.hakimzadeh@ut.ee" style="color:var(--teal-muted);">ali.hakimzadeh@ut.ee</a></p>
+  </div>
+</footer>
+
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>

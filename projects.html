@@ -3,31 +3,199 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Projects | Ali Hakimzadeh</title>
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Source+Serif+4:wght@400;600;700&display=swap" rel="stylesheet">
-  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="css/style.css" rel="stylesheet">
-  <link href="css/responsive.css" rel="stylesheet">
+  <title>Projects — Ali Hakimzadeh</title>
+  <meta name="description" content="Research projects by Ali Hakimzadeh — bioinformatics pipelines, reference databases, and computational biology tools.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
   <link rel="shortcut icon" href="images/favicon.png">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-  <nav class="navbar"><div class="container"><div class="logo">AH</div><ul class="nav-links"><li><a href="index.html">Home</a></li><li><a href="research.html">Research</a></li><li><a href="experience.html">Experience</a></li><li><a href="projects.html">Projects</a></li><li><a href="publications.html">Publications</a></li><li><a href="contact.html">Contact</a></li></ul><div class="hamburger"><span></span><span></span><span></span></div></div></nav>
 
-  <main class="page-shell">
-    <section class="page-hero"><div class="container"><h1>Key Projects</h1><p>Selected computational biology projects and collaborative research infrastructures.</p></div></section>
+<!-- NAV -->
+<nav class="site-nav" role="navigation">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">AH</a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="research.html">Research</a></li>
+      <li><a href="projects.html" class="active">Projects</a></li>
+      <li><a href="publications.html">Publications</a></li>
+      <li><a href="experience.html">Experience</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <button class="nav-hamburger" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+<div class="nav-mobile">
+  <a href="index.html">Home</a>
+  <a href="research.html">Research</a>
+  <a href="projects.html" class="active">Projects</a>
+  <a href="publications.html">Publications</a>
+  <a href="experience.html">Experience</a>
+  <a href="contact.html">Contact</a>
+</div>
 
-    <section class="projects"><div class="container"><div class="projects-grid">
-      <div class="project-card"><div class="project-image"><img src="images/portfolio/1.jpg" alt="PipeCraft2"></div><div class="project-content"><h3>PipeCraft2</h3><p class="project-category">Bioinformatics Pipeline</p><p>Development of new modules for a comprehensive metabarcoding analysis ecosystem.</p><div class="project-tech"><span>Nextflow</span><span>Docker</span><span>Python</span><span>R</span></div><a href="https://github.com/pipecraft2/pipecraft" target="_blank" class="project-link"><i class="fab fa-github"></i> View Project</a></div></div>
-      <div class="project-card"><div class="project-image"><img src="images/portfolio/2.jpg" alt="EUKARYOME"></div><div class="project-content"><h3>EUKARYOME</h3><p class="project-category">Reference Database</p><p>rRNA reference database development for comprehensive eukaryotic taxonomic identification.</p><div class="project-tech"><span>Bioinformatics</span><span>Database</span><span>Phylogenetics</span></div><a href="https://eukaryome.org/" target="_blank" class="project-link"><i class="fas fa-external-link-alt"></i> Website</a></div></div>
-      <div class="project-card"><div class="project-image"><img src="images/DEASS.png" alt="DEASS"></div><div class="project-content"><h3>DEASS</h3><p class="project-category">Statistical Method</p><p>Differential expression analysis sample-by-sample with robust performance on heterogeneous transcriptomic datasets.</p><div class="project-tech"><span>R</span><span>RNA-seq</span><span>Statistics</span><span>Method Development</span></div><a href="publications.html" class="project-link"><i class="fas fa-file-alt"></i> Related Publication</a></div></div>
-      <div class="project-card"><div class="project-image"><img src="images/portfolio/4.jpg" alt="TREC"></div><div class="project-content"><h3>TREC Project</h3><p class="project-category">International Collaboration</p><p>Large-scale coastal ecosystem sampling and analysis through the Traversing European Coastlines consortium.</p><div class="project-tech"><span>Sampling</span><span>Metabarcoding</span><span>Collaboration</span></div><a href="contact.html" class="project-link"><i class="fas fa-info-circle"></i> Details</a></div></div>
-      <div class="project-card"><div class="project-image"><img src="images/portfolio/5.jpg" alt="Chimera detection"></div><div class="project-content"><h3>Long-read Chimera Detection</h3><p class="project-category">Algorithm Evaluation</p><p>Benchmarking chimera-detection methods for long-read amplicon studies and establishing practical recommendations.</p><div class="project-tech"><span>Algorithms</span><span>PacBio</span><span>Nanopore</span><span>QC</span></div><a href="publications.html" class="project-link"><i class="fas fa-book"></i> Publication</a></div></div>
-      <div class="project-card"><div class="project-image"><img src="images/portfolio/6.jpg" alt="Single-cell genomics"></div><div class="project-content"><h3>Single-Cell Genomics</h3><p class="project-category">Cancer Research</p><p>scRNA-seq and CROP-seq analysis for gastric cancer organoids with ML-aided interpretation.</p><div class="project-tech"><span>scRNA-seq</span><span>CRISPR</span><span>Machine Learning</span><span>Cancer Genomics</span></div><a href="contact.html" class="project-link"><i class="fas fa-microscope"></i> Collaboration</a></div></div>
-    </div></div></section>
-  </main>
+<!-- PAGE HERO -->
+<section class="page-hero section--dark">
+  <div class="container">
+    <span class="label">Computational Biology Work</span>
+    <div class="divider"></div>
+    <h1>Projects</h1>
+    <p>Pipelines, databases, statistical methods, and international research collaborations.</p>
+  </div>
+</section>
 
-  <footer class="footer"><div class="container"><p>&copy; 2026 Ali Hakimzadeh | Bioinformatician at University of Tartu</p></div></footer>
-  <script src="lib/jquery/jquery.min.js"></script><script src="js/main.js"></script>
+<!-- PROJECTS GRID -->
+<section class="section section--surface">
+  <div class="container">
+    <div class="projects-grid">
+
+      <!-- 1: PipeCraft2 -->
+      <div class="project-card" data-aos="fade-up" data-aos-delay="0">
+        <div class="project-img-placeholder">
+          <i class="fas fa-code-branch"></i>
+        </div>
+        <div class="project-body">
+          <div class="project-category">Bioinformatics Pipeline</div>
+          <h3>PipeCraft2</h3>
+          <p>A modular, containerized pipeline for metabarcoding and amplicon sequencing data analysis. Supports Nextflow, Docker, and Singularity for reproducible, scalable workflows across HPC and cloud environments.</p>
+          <div class="project-tags">
+            <span class="project-tag">Nextflow</span>
+            <span class="project-tag">Docker</span>
+            <span class="project-tag">Python</span>
+            <span class="project-tag">R</span>
+          </div>
+          <a href="https://github.com/pipecraft2/pipecraft" target="_blank" rel="noopener" class="btn btn--primary btn--sm">
+            <i class="fab fa-github"></i> View on GitHub
+          </a>
+        </div>
+      </div>
+
+      <!-- 2: EUKARYOME -->
+      <div class="project-card" data-aos="fade-up" data-aos-delay="60">
+        <div class="project-img-placeholder">
+          <i class="fas fa-database"></i>
+        </div>
+        <div class="project-body">
+          <div class="project-category">Reference Database</div>
+          <h3>EUKARYOME</h3>
+          <p>A comprehensive rRNA gene reference database for the identification of all eukaryotic taxa. Enables high-precision environmental DNA classification across microbiome and ecological studies.</p>
+          <div class="project-tags">
+            <span class="project-tag">Bioinformatics</span>
+            <span class="project-tag">Database</span>
+            <span class="project-tag">Phylogenetics</span>
+          </div>
+          <a href="https://eukaryome.org/" target="_blank" rel="noopener" class="btn btn--primary btn--sm">
+            <i class="fas fa-external-link-alt"></i> Visit Database
+          </a>
+        </div>
+      </div>
+
+      <!-- 3: DEASS -->
+      <div class="project-card" data-aos="fade-up" data-aos-delay="120">
+        <img src="images/DEASS.png"
+             alt="DEASS statistical method"
+             class="project-img"
+             loading="lazy">
+        <div class="project-body">
+          <div class="project-category">Statistical Method</div>
+          <h3>DEASS</h3>
+          <p>A novel statistical framework for differential expression analysis in RNA-seq data, designed to improve robustness and reduce false discovery rates in multi-group comparisons with complex experimental designs.</p>
+          <div class="project-tags">
+            <span class="project-tag">R</span>
+            <span class="project-tag">RNA-seq</span>
+            <span class="project-tag">Statistics</span>
+            <span class="project-tag">Method Development</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- 4: TREC -->
+      <div class="project-card" data-aos="fade-up" data-aos-delay="0">
+        <div class="project-img-placeholder">
+          <i class="fas fa-globe-europe"></i>
+        </div>
+        <div class="project-body">
+          <div class="project-category">International Collaboration</div>
+          <h3>TREC Project</h3>
+          <p>The Traversing European Coastlines project — an international biodiversity sampling initiative spanning European coastlines to characterize marine and coastal microbial and eukaryotic communities via metabarcoding.</p>
+          <div class="project-tags">
+            <span class="project-tag">Sampling</span>
+            <span class="project-tag">Metabarcoding</span>
+            <span class="project-tag">Collaboration</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- 5: Long-read Chimera -->
+      <div class="project-card" data-aos="fade-up" data-aos-delay="60">
+        <div class="project-img-placeholder">
+          <i class="fas fa-dna"></i>
+        </div>
+        <div class="project-body">
+          <div class="project-category">Algorithm Evaluation</div>
+          <h3>Long-read Chimera Detection</h3>
+          <p>Systematic benchmarking of chimera detection algorithms for PacBio and Oxford Nanopore long-read amplicon data, quantifying error rates, sensitivity, and specificity across diverse marker regions and community complexities.</p>
+          <div class="project-tags">
+            <span class="project-tag">Algorithms</span>
+            <span class="project-tag">PacBio</span>
+            <span class="project-tag">Nanopore</span>
+            <span class="project-tag">QC</span>
+          </div>
+          <a href="https://peerj.com/articles/20456/" target="_blank" rel="noopener" class="btn btn--outline btn--sm">
+            <i class="fas fa-file-alt"></i> Publication
+          </a>
+        </div>
+      </div>
+
+      <!-- 6: Single-Cell -->
+      <div class="project-card" data-aos="fade-up" data-aos-delay="120">
+        <div class="project-img-placeholder">
+          <i class="fas fa-microscope"></i>
+        </div>
+        <div class="project-body">
+          <div class="project-category">Cancer Research</div>
+          <h3>Single-Cell Genomics</h3>
+          <p>Integrative single-cell analysis of cancer samples using 10X Chromium scRNA-seq and CROP-seq libraries. Applied ML models (scVI, TensorFlow, PyTorch) for clonal evolution, CNV detection, and gene set enrichment.</p>
+          <div class="project-tags">
+            <span class="project-tag">scRNA-seq</span>
+            <span class="project-tag">CRISPR</span>
+            <span class="project-tag">Machine Learning</span>
+            <span class="project-tag">Cancer Genomics</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-inner">
+      <div class="footer-logo">AH</div>
+      <nav class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="research.html">Research</a>
+        <a href="projects.html">Projects</a>
+        <a href="publications.html">Publications</a>
+        <a href="experience.html">Experience</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+    <p class="footer-copy">&copy; 2025 Ali Hakimzadeh · University of Tartu · <a href="mailto:ali.hakimzadeh@ut.ee" style="color:var(--teal-muted);">ali.hakimzadeh@ut.ee</a></p>
+  </div>
+</footer>
+
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>
