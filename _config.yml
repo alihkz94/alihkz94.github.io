@@ -3,7 +3,7 @@
 #  https://github.com/daattali/beautiful-jekyll
 # ──────────────────────────────────────────────────────────
 
-remote_theme: daattali/beautiful-jekyll@6.0.1
+remote_theme: daattali/beautiful-jekyll
 
 title: Ali Hakimzadeh
 description: Bioinformatician at the University of Tartu
