@@ -23,6 +23,16 @@ A comprehensive rRNA gene reference database for the identification of all eukar
 
 ---
 
+#### SnakeEUK
+
+🏦 University of Tartu
+🛠️ Snakemake · Python · Biopython · SeqKit
+🔗 [github.com/alihkz94/SnakeEUK](https://github.com/alihkz94/SnakeEUK)
+
+A Snakemake pipeline for processing and reformatting eukaryotic rRNA reference sequences (e.g. EUKARYOME) into multiple tool-specific formats: DADA2, QIIME2, SINTAX, Mothur, and a general rank-prefixed format. Handles encoding conversion (latin-1 to ASCII), taxonomy header normalization, placeholder cleaning, and incomplete taxonomic assignments to ensure compatibility across downstream classifiers.
+
+---
+
 #### DEASS
 
 🏦 University of Tartu
