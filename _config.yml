@@ -1,0 +1,56 @@
+# ──────────────────────────────────────────────────────────
+#  Beautiful Jekyll — _config.yml
+#  https://github.com/daattali/beautiful-jekyll
+# ──────────────────────────────────────────────────────────
+
+remote_theme: daattali/beautiful-jekyll@6.0.1
+
+title: Ali Hakimzadeh
+description: Bioinformatician at the University of Tartu
+url: "https://alihkz94.github.io"
+baseurl: ""
+
+# ── Author ────────────────────────────────────────────────
+author: Ali Hakimzadeh
+avatar: /assets/img/ali_professional.jpg
+round-avatar: true
+
+# ── Navigation ────────────────────────────────────────────
+navbar-links:
+  About: ""
+  Research: "research"
+  Experience: "experience"
+  Projects: "projects"
+  Publications: "publications"
+  Contact: "contact"
+
+# ── Social links (shown in sidebar/footer) ────────────────
+social-network-links:
+  email: "ali.hakimzadeh@ut.ee"
+  github: alihkz94
+  linkedin: alihkz94
+  orcid: "0000-0003-1336-7445"
+  google-scholar: gJ_QCvQAAAAJ
+  researchgate: Ali-Hakimzadeh
+  mastodon: "alihkz@genomic.social"
+
+# ── Footer ────────────────────────────────────────────────
+footer-link-active: true
+
+# ── Build ─────────────────────────────────────────────────
+markdown: kramdown
+kramdown:
+  input: GFM
+
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-remote-theme
+
+# Exclude from build
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+  - Readme.txt
+  - cv_extracted.txt
