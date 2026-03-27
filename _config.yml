@@ -17,7 +17,7 @@ round-avatar: true
 
 # ── Navigation ────────────────────────────────────────────
 navbar-links:
-  About: ""
+  About: "about"
   Research: "research"
   Experience: "experience"
   Projects: "projects"
