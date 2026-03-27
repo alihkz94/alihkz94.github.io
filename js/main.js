@@ -107,9 +107,9 @@ function initDNA() {
     nodes.push({
       x: Math.random() * 1600,
       y: Math.random() * 900,
-      vx: (Math.random() - 0.5) * 0.35,
-      vy: (Math.random() - 0.5) * 0.35,
-      r: Math.random() * 1.5 + 0.8,
+      vx: (Math.random() - 0.5) * 0.55,
+      vy: (Math.random() - 0.5) * 0.55,
+      r: Math.random() * 2.5 + 1.5,
       pulse: Math.random() * Math.PI * 2,
     });
   }
@@ -124,14 +124,14 @@ function initDNA() {
     const step      = 4;
     const helixOffset = 28;
 
-    ctx.lineWidth = 0.8;
+    ctx.lineWidth = 2.5;
 
     for (let col = 0; col < HELIX_COLS; col++) {
       const xBase = (col + 0.5) * (W / HELIX_COLS);
 
       // Strand A
       ctx.beginPath();
-      ctx.strokeStyle = 'rgba(20, 184, 166, 0.22)';
+      ctx.strokeStyle = 'rgba(0, 212, 200, 0.65)';
       for (let y = 0; y <= H; y += step) {
         const x = xBase + Math.sin(y * freq + phase + col * 2.1) * amplitude * 0.4;
         y === 0 ? ctx.moveTo(x, y) : ctx.lineTo(x, y);
@@ -140,7 +140,7 @@ function initDNA() {
 
       // Strand B
       ctx.beginPath();
-      ctx.strokeStyle = 'rgba(45, 212, 191, 0.12)';
+      ctx.strokeStyle = 'rgba(0, 240, 255, 0.45)';
       for (let y = 0; y <= H; y += step) {
         const x = xBase + Math.sin(y * freq + phase + col * 2.1 + Math.PI) * amplitude * 0.4;
         y === 0 ? ctx.moveTo(x, y) : ctx.lineTo(x, y);
@@ -148,8 +148,8 @@ function initDNA() {
       ctx.stroke();
 
       // Base pair rungs
-      ctx.strokeStyle = 'rgba(20, 184, 166, 0.10)';
-      ctx.lineWidth = 0.6;
+      ctx.strokeStyle = 'rgba(57, 255, 20, 0.35)';
+      ctx.lineWidth = 1.8;
       for (let y = 0; y <= H; y += 20) {
         const xA = xBase + Math.sin(y * freq + phase + col * 2.1) * amplitude * 0.4;
         const xB = xBase + Math.sin(y * freq + phase + col * 2.1 + Math.PI) * amplitude * 0.4;
@@ -161,13 +161,13 @@ function initDNA() {
         // Node dot at rung ends
         const bright = Math.sin(y * freq * 3 + phase * 2) * 0.5 + 0.5;
         ctx.beginPath();
-        ctx.arc(xA, y, 1.2, 0, Math.PI * 2);
-        ctx.fillStyle = `rgba(45, 212, 191, ${0.15 + bright * 0.25})`;
+        ctx.arc(xA, y, 2.5, 0, Math.PI * 2);
+        ctx.fillStyle = `rgba(0, 212, 200, ${0.4 + bright * 0.45})`;
         ctx.fill();
 
         ctx.beginPath();
-        ctx.arc(xB, y, 1.2, 0, Math.PI * 2);
-        ctx.fillStyle = `rgba(13, 148, 136, ${0.10 + bright * 0.18})`;
+        ctx.arc(xB, y, 2.5, 0, Math.PI * 2);
+        ctx.fillStyle = `rgba(57, 255, 20, ${0.3 + bright * 0.35})`;
         ctx.fill();
       }
     }
@@ -190,10 +190,10 @@ function initDNA() {
         const dy = nodes[i].y - nodes[j].y;
         const dist = Math.sqrt(dx * dx + dy * dy);
         if (dist < LINK_DIST) {
-          const alpha = (1 - dist / LINK_DIST) * 0.10;
+          const alpha = (1 - dist / LINK_DIST) * 0.28;
           ctx.beginPath();
-          ctx.strokeStyle = `rgba(20, 184, 166, ${alpha})`;
-          ctx.lineWidth = 0.5;
+          ctx.strokeStyle = `rgba(0, 212, 200, ${alpha})`;
+          ctx.lineWidth = 1.2;
           ctx.moveTo(nodes[i].x, nodes[i].y);
           ctx.lineTo(nodes[j].x, nodes[j].y);
           ctx.stroke();
@@ -206,14 +206,14 @@ function initDNA() {
       const pulse = Math.sin(n.pulse) * 0.5 + 0.5;
       ctx.beginPath();
       ctx.arc(n.x, n.y, n.r * (1 + pulse * 0.4), 0, Math.PI * 2);
-      ctx.fillStyle = `rgba(45, 212, 191, ${0.15 + pulse * 0.2})`;
+      ctx.fillStyle = `rgba(0, 240, 255, ${0.4 + pulse * 0.4})`;
       ctx.fill();
     });
   }
 
   function draw(timestamp) {
     ctx.clearRect(0, 0, W, H);
-    t = timestamp * 0.0006;
+    t = timestamp * 0.001;
     drawHelix(t);
     drawNodes(t);
     rafId = requestAnimationFrame(draw);
