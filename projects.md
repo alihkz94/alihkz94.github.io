@@ -38,7 +38,7 @@ A statistical method for differential expression analysis in RNA-seq data, desig
 🛠️ Python · R · PacBio · Oxford Nanopore
 🔗 [doi:10.7717/peerj.20456](https://peerj.com/articles/20456/)
 
-Systematic benchmarking of chimera detection algorithms for PacBio and Oxford Nanopore long-read amplicon data, quantifying error rates, sensitivity, and specificity across diverse marker regions and community complexities.
+Systematic evaluation of chimera detection algorithms for PacBio and Oxford Nanopore long-read amplicon data. Revealed high false-positive rates across algorithms, showing that commonly used tools discard substantial amounts of genuine sequences during quality filtering.
 
 ---
 

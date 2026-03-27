@@ -5,7 +5,7 @@ title: Publications
 
 ## Published
 
-- **Hakimzadeh A**, Mikryukov V, Tedersoo L, Anslan S. (2025). Benchmarking chimera detection algorithms for long-read amplicons. *PeerJ*. [doi:10.7717/peerj.20456](https://peerj.com/articles/20456/)
+- **Hakimzadeh A**, Mikryukov V, Metsoja M, Tedersoo L, Anslan S. (2025). Are we throwing away good data? Evaluation of chimera detection algorithms on long-read amplicons reveals high false-positive rates across algorithms. *PeerJ*, 13:e20456. [doi:10.7717/peerj.20456](https://peerj.com/articles/20456/)
 
 - Hagh-Doust N, **Hakimzadeh A**, Kupagme JY, Dierickx G, Copot O, Tedersoo L. (2026). Invisible passengers: the diversity and invasion risks of fungi and bacteria transported via footwear of international airport passengers. *Biological Invasions*. [doi:10.1007/s10530-025-03741-y](https://link.springer.com/article/10.1007/s10530-025-03741-y)
 
